@@ -1,0 +1,74 @@
+.main-banner{
+  position: relative;
+  &__img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+  &__content {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    &__title {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+    &__txt {
+      font-size: 1.5rem;
+    }
+    &__name {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      background-color: #6EC1E3;
+      width: fit-content;
+      padding: 0.2rem 0.5rem;
+      border-radius: 5px;
+    }
+  }
+  &__button {
+    display: flex;
+    gap: 25px;
+    margin: 30px 0;
+    &__meet {
+      font-size: 1.5rem;
+      font-weight: 700;
+      width: fit-content;
+      background-color: #61CE70;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      &:hover {
+        background-color: #4CAF6A;
+        transform: scale(1.05);
+      }
+    }
+    &__more {
+      font-size: 1.5rem;
+      font-weight: 700;
+      width: fit-content;
+      background-color: rgba(109, 113, 66, 0.5);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        background-color: rgba(109, 113, 66, 1);
+        transform: scale(1.05);
+      }
+    }
+
+  }
+}
