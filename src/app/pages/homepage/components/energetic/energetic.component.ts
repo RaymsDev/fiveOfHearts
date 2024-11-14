@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-massages',
+  selector: 'app-energetic',
   standalone: true,
   imports: [RouterModule],
-  templateUrl: './massages.component.html',
-  styleUrl: './massages.component.scss'
+  templateUrl: './energetic.component.html',
+  styleUrl: './energetic.component.scss'
 })
-export class MassagesComponent {
+export class EnergeticComponent {
 
 }

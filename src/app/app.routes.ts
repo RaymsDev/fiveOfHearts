@@ -8,6 +8,7 @@ import { PricesComponent } from './pages/prices/prices.component';
 import { SessionComponent } from './pages/session/session.component';
 import { HolisticMassageComponent } from './pages/holistic-massage/holistic-massage.component';
 import { EnergeticTreatmentComponent } from './pages/energetic-treatment/energetic-treatment.component';
+import { PrenatalMassageComponent } from './pages/prenatal-massage/prenatal-massage.component';
 
 export const routes: Routes = [
   {path: '', component: HomepageComponent},
@@ -20,5 +21,6 @@ export const routes: Routes = [
   {path: 'session', component: SessionComponent},
   {path: 'holistic_massage', component: HolisticMassageComponent},
   {path: 'energetic_treatment', component: EnergeticTreatmentComponent},
+  {path: 'prenatal_massage', component: PrenatalMassageComponent},
   {path: '**', redirectTo: ''}
 ];
