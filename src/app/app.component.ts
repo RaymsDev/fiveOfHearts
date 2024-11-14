@@ -9,8 +9,6 @@ import { BannerComponent } from './components/banner/banner.component';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent {
-
-}
+export class AppComponent {}

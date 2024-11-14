@@ -6,8 +6,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
   templateUrl: './massages.component.html',
-  styleUrl: './massages.component.scss'
+  styleUrl: './massages.component.scss',
 })
-export class MassagesComponent {
-
-}
+export class MassagesComponent {}
