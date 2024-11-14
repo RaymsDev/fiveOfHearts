@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  hr {
+    width: 20%;
+    margin-bottom: 20px;
+  }
   &__title {
     width: fit-content;
     color: var(--color-secondary);
@@ -15,7 +19,6 @@
     justify-content: center;
     gap: 100px;
     width: 90%;
-    margin: 20px auto 100px;
     a {
       transition: all 0.3s;
       &:hover {
@@ -24,8 +27,22 @@
       }
     }
   }
+  &__others {
+    font-size: 1.5rem;
+        font-weight: 700;
+        background-color: var(--color-primary);
+        color: var(--color-text);
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin: 20px auto 100px;
+        &:hover {
+          background-color: var(--color-secondary);
+          transform: scale(1.02);
+        }
+  }
 }
-hr {
-  width: 20%;
-  margin-bottom: 20px;
-}
+
