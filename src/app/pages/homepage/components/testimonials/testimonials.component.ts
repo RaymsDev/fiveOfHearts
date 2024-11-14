@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ScriptLoaderService } from '../../services/script-loader.service';
+import { ScriptLoaderService } from '../../../../services/script-loader.service';
+
 
 @Component({
   selector: 'app-testimonials',

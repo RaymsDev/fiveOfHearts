@@ -1,0 +1,51 @@
+.session {
+  background-color: var(--color-background);
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2rem auto;
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  &__subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin: 2rem 0 1rem;
+  }
+  &__txt {
+    font-size: 1.1rem;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    strong {
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+  }
+  &__list {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    list-style: none;
+    li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: var(--color-text);
+      line-height: 1.6;
+      &::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--color-accent);
+        font-size: 1.2rem;
+        line-height: 1;
+      }
+    }
+  }
+}

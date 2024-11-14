@@ -4,6 +4,7 @@
   --color-primary: #8D6D51;
   --color-secondary: #3D2D23;
   --color-text: #ffffff;
+  --color-text-dark: #000000;
   --color-background: #C5B9A6;
   --color-banner: #a08d73;
   --color-testimonials: #6f705d;
@@ -20,4 +21,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif;
+}
+
+h2, h3 {
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-text);
 }

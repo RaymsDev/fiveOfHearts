@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { PregnantComponent } from '../../components/pregnant/pregnant.component';
-import { MassagesComponent } from '../../components/massages/massages.component';
-import { OtherServicesComponent } from "../../components/other-services/other-services.component";
+import { PregnantComponent } from '../../pages/homepage/components/pregnant/pregnant.component';
+import { MassagesComponent } from '../../pages/homepage/components/massages/massages.component';
+import { OtherServicesComponent } from "../../pages/homepage/components/other-services/other-services.component";
 
 @Component({
   selector: 'app-healthcare',

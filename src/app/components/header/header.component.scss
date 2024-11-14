@@ -18,22 +18,21 @@
       gap: 50px;
       align-items: center;
       margin-right: 50px;
-      &__link {
+      &__link a{
         text-decoration: none;
         font-size: 1.2rem;
         transition: 0.3s;
-        cursor: pointer;
+        color: var(--color-text-dark);
         &:hover {
           color: var(--color-secondary);
         }
-        &__contact {
-          font-size: 1.2rem;
-          background-color: var(--color-secondary);
-          color: var(--color-text);
-          padding: 10px 20px;
-          border-radius: 10px;
-          cursor: pointer;
-        }
+      }
+      &__contact a {
+        font-size: 1.2rem;
+        background-color: var(--color-secondary);
+        color: var(--color-text);
+        padding: 10px 20px;
+        border-radius: 10px;
       }
     }
   }
