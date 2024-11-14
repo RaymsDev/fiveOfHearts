@@ -1,0 +1,23 @@
+<section class="massage">
+  @if (content) {
+    <div>
+      <h2 class="massage__title">{{ content.title }}</h2>
+      <hr />
+    </div>
+
+    @for (block of content.blocks; track $index) {
+      <div class="massage__block">
+        <div class="massage__image">
+          <img [src]="block.image" [alt]="block.alt" />
+        </div>
+        <div class="massage__content">
+          @for (section of block.sections; track $index) {
+            <p class="massage__txt">
+              <strong>{{ section.subtitle }}</strong> {{ section.text }}
+            </p>
+          }
+        </div>
+      </div>
+    }
+  }
+</section>
