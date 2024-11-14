@@ -6,6 +6,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { PricesComponent } from './pages/prices/prices.component';
 import { SessionComponent } from './pages/session/session.component';
+import { HolisticMassageComponent } from './pages/holistic-massage/holistic-massage.component';
 
 export const routes: Routes = [
   {path: '', component: HomepageComponent},
@@ -16,5 +17,6 @@ export const routes: Routes = [
   {path: 'prices', component: PricesComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'session', component: SessionComponent},
+  {path: 'holistic_massage', component: HolisticMassageComponent},
   {path: '**', redirectTo: ''}
 ];
