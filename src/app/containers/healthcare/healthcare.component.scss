@@ -1,0 +1,24 @@
+.healthcare {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    width: fit-content;
+    color: #3D2D23;
+    font-size: 2rem;
+    margin: 20px auto ;
+    font-weight: 700;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 90%;
+    margin: 20px auto 100px;
+  }
+}
+hr {
+  width: 20%;
+  margin-bottom: 20px;
+}
