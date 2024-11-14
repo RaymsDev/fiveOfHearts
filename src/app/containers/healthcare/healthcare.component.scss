@@ -16,6 +16,13 @@
     gap: 100px;
     width: 90%;
     margin: 20px auto 100px;
+    a {
+      transition: all 0.3s;
+      &:hover {
+        transform: scale(1.02);
+        transition: all 0.3s;
+      }
+    }
   }
 }
 hr {

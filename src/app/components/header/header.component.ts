@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { BannerComponent } from '../banner/banner.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterModule, BannerComponent],
+  imports: [RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
