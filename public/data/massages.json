@@ -3,8 +3,8 @@
     "title": "Qu'est-ce que les soins énergétiques ?",
     "blocks": [
       {
-        "image": "zen.jpg",
-        "alt": "Illustration des soins énergétiques",
+        "image": "assets/zen.jpg",
+        "alt": "Une personne fait du yoga devant un soleil couchant devant l'océan",
         "sections": [
           {
             "subtitle": "Les bienfaits des soins énergétiques :",
@@ -17,8 +17,8 @@
         ]
       },
       {
-        "image": "zen2.jpg",
-        "alt": "Déroulement d'une séance énergétique",
+        "image": "assets/zen2.jpg",
+        "alt": "Pierres empilées sur du sable",
         "sections": [
           {
             "subtitle": "Une thérapie pour tous :",
@@ -36,7 +36,7 @@
     "title": "Détails sur le Massage Holistique",
     "blocks": [
       {
-        "image": "holistic.jpg",
+        "image": "assets/holistic.jpg",
         "alt": "Massage holistique en cours",
         "sections": [
           {
@@ -50,7 +50,7 @@
         ]
       },
       {
-        "image": "towel.jpg",
+        "image": "assets/towel.jpg",
         "alt": "Moment de relaxation et bienfaits du massage",
         "sections": [
           {
@@ -69,8 +69,8 @@
     "title": "Massage pour Femme Enceinte",
     "blocks": [
       {
-        "image": "pregnant2.jpg",
-        "alt": "Massage pour femme enceinte",
+        "image": "assets/pregnant2.jpg",
+        "alt": "Femme enceinte allongée",
         "sections": [
           {
             "subtitle": "Un moment de douceur pour la future maman :",
@@ -83,8 +83,8 @@
         ]
       },
       {
-        "image": "pregnant3.jpg",
-        "alt": "Bienfaits du massage prénatal",
+        "image": "assets/pregnant3.jpg",
+        "alt": "Femme enceinte allongée",
         "sections": [
           {
             "subtitle": "Accueil et préparation :",
