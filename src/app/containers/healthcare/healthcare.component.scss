@@ -4,7 +4,7 @@
   flex-direction: column;
   &__title {
     width: fit-content;
-    color: #3D2D23;
+    color: var(--color-secondary);
     font-size: 2rem;
     margin: 20px auto ;
     font-weight: 700;
