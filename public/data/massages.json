@@ -1,0 +1,101 @@
+{
+  "energyTherapy": {
+    "title": "Qu'est-ce que les soins énergétiques ?",
+    "blocks": [
+      {
+        "image": "zen.jpg",
+        "alt": "Illustration des soins énergétiques",
+        "sections": [
+          {
+            "subtitle": "Les bienfaits des soins énergétiques :",
+            "text": "Les soins énergétiques sont une thérapie qui procure de nombreux bienfaits. Ils visent à purifier le corps et l’esprit, augmenter le taux vibratoire, et harmoniser les chakras. Les thérapies énergétiques utilisent « l’énergie » pour guérir physiquement, émotionnellement et spirituellement."
+          },
+          {
+            "subtitle": "Équilibre et revitalisation :",
+            "text": "Les soins énergétiques se concentrent sur les champs énergétiques autour du corps et incluent des sources d’énergie pour influencer la santé. Lorsque l’énergie est fluide et équilibrée, nous sommes en bonne santé, mais un blocage peut créer un déséquilibre."
+          }
+        ]
+      },
+      {
+        "image": "zen2.jpg",
+        "alt": "Déroulement d'une séance énergétique",
+        "sections": [
+          {
+            "subtitle": "Une thérapie pour tous :",
+            "text": "Le soin énergétique est bénéfique pour tous : adolescents, jeunes parents, personnes en milieu de vie ou en âge avancé. Il permet de gérer les émotions, le stress, et d’améliorer la vitalité. C’est une thérapie qui harmonise les chakras, libère des blocages et revitalise l’énergie vitale."
+          },
+          {
+            "subtitle": "Déroulement d'une séance :",
+            "text": "Lors d'une séance, le praticien mesure l’énergie des chakras et utilise différentes positions de mains pour rééquilibrer les énergies. Cette pratique aide à calmer l’esprit, libérer les tensions, et apporter une paix intérieure."
+          }
+        ]
+      }
+    ]
+  },
+  "holisticMassage": {
+    "title": "Détails sur le Massage Holistique",
+    "blocks": [
+      {
+        "image": "holistic.jpg",
+        "alt": "Massage holistique en cours",
+        "sections": [
+          {
+            "subtitle": "Un massage unifiant et enveloppant :",
+            "text": "Le Massage Holistique est avant tout un massage unifiant et enveloppant, relaxant et énergisant. Il comprend une large gamme de mouvements variés et précis, tels que balancements et étirements, effleurages et pétrissages. Ces mouvements peuvent être légers ou profonds, courts ou longs, lents ou rapides, localisés ou globaux. Chaque partie massée reçoit une attention particulière et est réunifiée à l’ensemble du corps."
+          },
+          {
+            "subtitle": "La qualité du toucher :",
+            "text": "Dans ce massage, la qualité du toucher est essentielle. Il est une forme de communication non verbale entre le praticien et le receveur. Pour le praticien, ce massage est plus qu’une technique. Il mobilise tout son savoir-faire, son savoir-être et son intuition dans un dialogue unique avec la personne massée."
+          }
+        ]
+      },
+      {
+        "image": "towel.jpg",
+        "alt": "Moment de relaxation et bienfaits du massage",
+        "sections": [
+          {
+            "subtitle": "Un outil de développement personnel :",
+            "text": "Pour le receveur, le Massage Holistique® représente souvent bien plus qu’un massage bien-être. Il y trouve une opportunité unique de sentir, observer et écouter son corps, de lâcher prise, d’accueillir ses émotions et de s’ouvrir à soi-même."
+          },
+          {
+            "subtitle": "Un espace de relâchement et de ressourcement :",
+            "text": "Naturellement, une interaction se tisse entre le donneur et le receveur, où la respiration trouve un rythme apaisant. Le massage procure des bienfaits nombreux : relaxation, revitalisation, meilleure connaissance de soi, et capacité accrue à lâcher prise. Il permet également de nouer une relation positive avec soi-même."
+          }
+        ]
+      }
+    ]
+  },
+  "prenatalMassage": {
+    "title": "Massage pour Femme Enceinte",
+    "blocks": [
+      {
+        "image": "pregnant2.jpg",
+        "alt": "Massage pour femme enceinte",
+        "sections": [
+          {
+            "subtitle": "Un moment de douceur pour la future maman :",
+            "text": "Pendant la grossesse, le corps subit de grands changements. Le massage prénatal offre un moment de détente et de sérénité, permettant à la future maman de se reconnecter avec son corps tout en offrant un moment de douceur au bébé."
+          },
+          {
+            "subtitle": "Bienfaits pour la mère et le bébé :",
+            "text": "Ce massage aide à relâcher les tensions musculaires, améliorer la circulation, et réduire le stress. C’est une parenthèse qui procure bien-être et relaxation pour la future maman et son bébé."
+          }
+        ]
+      },
+      {
+        "image": "pregnant3.jpg",
+        "alt": "Bienfaits du massage prénatal",
+        "sections": [
+          {
+            "subtitle": "Accueil et préparation :",
+            "text": "La séance commence par un accueil et un entretien rapide pour connaître les besoins de la future maman. Le massage se pratique en position allongée sur le côté, avec des coussins de soutien pour un confort optimal."
+          },
+          {
+            "subtitle": "Techniques et approche douce :",
+            "text": "Ce massage utilise des mouvements lents et enveloppants, adaptés aux besoins spécifiques des femmes enceintes. Il apporte confort et détente, sans pression excessive, pour favoriser une relaxation complète."
+          }
+        ]
+      }
+    ]
+  }
+}
