@@ -1,11 +1,11 @@
 .about {
   position: relative;
   &__img {
+    position: relative;
     img {
-      height: 100vh;
+      height: 80vh;
       width: 100%;
       object-fit: cover;
-      position: relative;
       display: block;
     }
     &__overlay {
@@ -19,24 +19,46 @@
     }
   }
   &__content {
-    width: 60%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 50px;
     color: white;
     z-index: 2;
-    display: flex;
+    &__round {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      border-radius: 100%;
+      overflow: hidden;
+      &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #3D2D23;
+        border-radius: 100%;
+        z-index: 1;
+      }
+      &__img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 2;
+      }
+    }
     &__flex {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       gap: 1rem;
+      max-width: 600px;
       &__name {
         font-size: 2rem;
         font-weight: 700;
-        color: #61CE70;
-        width: fit-content;
+        color: white;
         padding: 0.2rem 0.5rem;
         border-radius: 5px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -45,13 +67,13 @@
         width: 20%;
       }
       &__txt {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
       }
       &__btn {
         font-size: 1.5rem;
         font-weight: 700;
-        width: fit-content;
-        background-color: #61CE70;
+        background-color: #8D6D51;
         color: white;
         padding: 0.5rem 1rem;
         border: none;
@@ -60,15 +82,10 @@
         transition: all 0.3s;
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         &:hover {
-          background-color: #4CAF6A;
+          background-color: #3D2D23;
           transform: scale(1.05);
         }
       }
-    }
-    &__img {
-      width: 400px;
-      object-fit: cover;
-      z-index: 2;
     }
   }
 }
