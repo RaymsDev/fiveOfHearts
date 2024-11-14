@@ -13,7 +13,7 @@
     }
     &__title {
       width: fit-content;
-      color: #3D2D23;
+      color: var(--color-secondary);
       font-size: 2rem;
       margin: 0 auto 20px;
       font-weight: 700;
@@ -27,8 +27,8 @@
       font-size: 1.5rem;
       font-weight: 700;
       width: fit-content;
-      background-color: #8D6D51;
-      color: white;
+      background-color: var(--color-primary);
+      color: var(--color-text);
       padding: 0.5rem 1rem;
       border: none;
       border-radius: 5px;
@@ -36,7 +36,7 @@
       transition: all 0.3s;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
       &:hover {
-        background-color: #3D2D23;
+        background-color: var(--color-secondary);
         transform: scale(1.05);
       }
     }
