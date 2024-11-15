@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { EXTERNAL_URL } from '../../configs';
 import { RouterModule } from '@angular/router';
+import { SITE_CONFIG } from '../../configs';
 
 @Component({
   selector: 'app-main-banner',
@@ -10,5 +10,5 @@ import { RouterModule } from '@angular/router';
   styleUrl: './main-banner.component.scss',
 })
 export class MainBannerComponent {
-  public bookingUrl: string = EXTERNAL_URL['BOOKING'];
+  public bookingUrl: string = SITE_CONFIG['BOOKING'];
 }

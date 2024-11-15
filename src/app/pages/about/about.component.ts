@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SITE_CONFIG } from '../../configs';
 
 @Component({
   selector: 'app-about',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
 })
-export class AboutComponent {}
+export class AboutComponent {
+  public facebookUrl: string = SITE_CONFIG['FACEBOOK'];
+  public googleUrl: string = SITE_CONFIG['GOOGLE'];
+}
