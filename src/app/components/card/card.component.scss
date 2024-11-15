@@ -1,0 +1,47 @@
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: var(--color-banner);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  height: 550px;
+  margin: auto;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  &__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &__body {
+    padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: var(--color-secondary);
+    }
+    &__description,
+    &__txt {
+      flex: 1;
+      margin: 4px 0;
+      font-size: 0.95rem;
+      color: var(--color-text);
+      strong {
+        color: var(--color-secondary);
+        font-weight: 500;
+      }
+    }
+  }
+}

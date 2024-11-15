@@ -1,0 +1,12 @@
+<div class="card">
+  <img [src]="healthcareItem.img" [alt]="healthcareItem.title" class="card__img">
+  <div class="card__body">
+    <h2 class="card__body__title">{{ healthcareItem.title }}</h2>
+    <p class="card__body__description">{{ healthcareItem.description }}</p>
+    <div class="card_body__ctn">
+      <p class="card__body__txt"><strong>Durée :</strong> {{ healthcareItem.duration }}</p>
+      <p class="card__body__txt"><strong>Prix :</strong> {{ healthcareItem.prices }}</p>
+      <p class="card__body__txt"><strong>Audience :</strong> {{ healthcareItem.audience }}</p>
+    </div>
+  </div>
+</div>
