@@ -46,8 +46,8 @@
   },
   {
     "id": 6,
-    "title": "Relaxation Énergétique",
-    "description": "Alliez respiration profonde et équilibrage énergétique pour atteindre une sérénité intérieure incomparable. La Relaxation Énergétique est une méthode douce qui apaise les tensions émotionnelles, réduit le stress et favorise un état de calme et d’harmonie. Idéal pour tous, ce soin revitalise les énergies et rétablit l’équilibre entre le corps et l’esprit.",
+    "title": "Bougies d'oreille Hopi",
+    "description": "Redécouvrez une tradition ancestrale avec les bougies d'oreille Hopi. Ce soin naturel aide à éliminer les impuretés auriculaires tout en offrant une profonde relaxation. Grâce à leur action douce et calorique, ces bougies favorisent une meilleure hygiène auriculaire et procurent une sensation de calme et de bien-être. Idéal pour apaiser les tensions du quotidien.",
     "img": "assets/ears.jpg",
     "duration": "60 min",
     "prices": "50€",
@@ -55,8 +55,8 @@
   },
   {
     "id": 7,
-    "title": "Soin Reiki",
-    "description": "Explorez le pouvoir du Reiki, une pratique holistique qui utilise l'énergie universelle pour harmoniser le corps et l'esprit. Ce soin stimule les capacités naturelles d'auto-guérison et offre un profond sentiment de relaxation. Parfait pour ceux en quête de bien-être global, le Reiki aide à soulager les douleurs, calmer l'esprit et équilibrer les énergies vitales.",
+    "title": "Micro massage crânien",
+    "description": "Profitez d'un moment de détente absolue avec le micro massage crânien. En ciblant les points d'énergie du crâne et de la nuque, ce soin aide à soulager les maux de tête, réduire le stress et libérer les tensions musculaires. Un massage idéal pour retrouver équilibre, clarté mentale et bien-être global.",
     "img": "assets/neck_massage.jpg",
     "duration": "1h30",
     "prices": "60€",

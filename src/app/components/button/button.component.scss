@@ -1,0 +1,18 @@
+:host {
+  position: relative;
+}
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--color-primary-button);
+  color: var(--color-text);
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s;
+  &:hover {
+    background-color: var(--color-primary-button-hover);
+  }
+}
