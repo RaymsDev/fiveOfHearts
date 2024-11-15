@@ -23,6 +23,25 @@
     text-align: justify;
     color: var(--color-text);
   }
+  &__social {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 5rem;
+    a {
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      background-color: var(--color-primary);
+      color: var(--color-text);
+      transition: all 0.3s;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      &:hover {
+        background-color: var(--color-secondary);
+        transform: scale(1.02);
+      }
+    }
+  }
   .about__list {
     padding-left: 1.5rem;
     list-style-type: disc;
