@@ -3,10 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Healthcare } from '../models/healthcare.model';
 
-
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class HealthcareService {
   private dataUrl = 'data/healthcare.json';
 

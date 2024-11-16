@@ -7,9 +7,7 @@ import {
   RendererFactory2,
 } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class ScriptLoaderService {
   private renderer: Renderer2;
   private platformId: Object;
