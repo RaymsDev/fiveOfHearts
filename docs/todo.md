@@ -7,3 +7,4 @@
 - [ ] Add social links in the bottom of the page
 - [ ] Check prices of products on Google page to be inline with the site
 - [x] Add Google Analytics
+- [ ] Add link to booking page in Google Map for pregnancy massage
