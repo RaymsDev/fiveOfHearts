@@ -16,7 +16,7 @@
     border-bottom: 2px solid #ccc;
     padding-bottom: 0.5rem;
   }
-  &__txt{
+  &__txt {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -49,6 +49,14 @@
       margin-bottom: 0.5rem;
       font-size: 1rem;
       color: var(--color-text);
+    }
+
+    &__link {
+      color: var(--color-primary);
+      text-decoration: none;
+      &:hover {
+        color: var(--color-secondary);
+      }
     }
   }
 }
