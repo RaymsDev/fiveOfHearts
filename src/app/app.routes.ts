@@ -10,14 +10,14 @@ import { SessionComponent } from './pages/session/session.component';
 import { MassageComponent } from './pages/massage/massage.component';
 
 export const routes: Routes = [
-  {path: '', component: HomepageComponent},
-  {path: 'healthcare', component: HealthcareComponent},
+  { path: '', component: HomepageComponent },
+  { path: 'healthcare', component: HealthcareComponent },
   // {path: 'healthcare/:id', component: HealthcareComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'gallery', component: GalleryComponent},
-  {path: 'prices', component: PricesComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'session', component: SessionComponent},
-  {path: 'massage/:type', component: MassageComponent},
-  {path: '**', redirectTo: ''}
+  { path: 'about', component: AboutComponent },
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'prices', component: PricesComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'session', component: SessionComponent },
+  { path: 'massage/:type', component: MassageComponent },
+  { path: '**', redirectTo: '' },
 ];

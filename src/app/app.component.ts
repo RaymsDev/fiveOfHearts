@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NgxGoogleAnalyticsModule } from '@hakimio/ngx-google-analytics';
 import { HeaderComponent } from './components/header/header.component';
-import { MainBannerComponent } from './components/main-banner/main-banner.component';
-import { BannerComponent } from './components/banner/banner.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent],
+  imports: [RouterOutlet, HeaderComponent, NgxGoogleAnalyticsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

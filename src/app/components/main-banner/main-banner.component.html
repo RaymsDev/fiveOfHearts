@@ -20,8 +20,10 @@
         [href]="bookingUrl"
         target="_blank"
         rel="noopener noreferrer"
-        >Prendre RDV en ligne</a
+        (click)="onBookingClick()"
       >
+        Prendre RDV en ligne
+      </a>
       <button class="main-banner__button__more" routerLink="/session">
         Déroulé d'une séance
       </button>

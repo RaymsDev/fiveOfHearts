@@ -6,8 +6,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
   templateUrl: './energetic.component.html',
-  styleUrl: './energetic.component.scss'
+  styleUrl: './energetic.component.scss',
 })
-export class EnergeticComponent {
-
-}
+export class EnergeticComponent {}

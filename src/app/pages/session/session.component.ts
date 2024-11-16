@@ -6,8 +6,6 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
   templateUrl: './session.component.html',
-  styleUrl: './session.component.scss'
+  styleUrl: './session.component.scss',
 })
-export class SessionComponent {
-
-}
+export class SessionComponent {}
