@@ -8,7 +8,7 @@ import { SITE_CONFIG } from '../../configs';
   standalone: true,
   imports: [ButtonComponent],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.scss'
+  styleUrl: './card.component.scss',
 })
 export class CardComponent implements OnInit {
   @Input() healthcareItem!: Healthcare;
@@ -26,7 +26,7 @@ export class CardComponent implements OnInit {
         return SITE_CONFIG['HOLISTIC_CARE'];
       case 'Micro massage crânien':
         return SITE_CONFIG['HEAD_MASSAGE'];
-      case 'Bougies d\'oreille Hopi':
+      case "Bougies d'oreille Hopi":
         return SITE_CONFIG['CANDLE_HOPI'];
       case 'Barrage des brûlures':
         return SITE_CONFIG['BURN_CARE'];

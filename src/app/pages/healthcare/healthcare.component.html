@@ -1,8 +1,6 @@
 <h2>Découvrez tous nos soins</h2>
 <section class="healthcare-container">
   @for (item of healthcareData; track $index) {
-    <app-card
-      [healthcareItem]="item">
-    ></app-card>
+    <app-card [healthcareItem]="item"> ></app-card>
   }
 </section>

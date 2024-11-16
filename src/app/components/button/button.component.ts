@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],
   standalone: true,
-  imports: [CommonModule]
+  imports: [CommonModule],
 })
 export class ButtonComponent {
   @Input() label: string = '';
