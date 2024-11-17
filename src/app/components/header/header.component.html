@@ -1,11 +1,11 @@
 <nav class="header">
-  <ul class="header__list">
-    <li class="header__list__logo">
+  <div class="header__list">
+    <span class="header__list__logo">
       <a routerLink="/">
         <img src="assets/logo.png" alt="Logo" class="header__list__img" />
       </a>
-    </li>
-    <div class="header__list__nav">
+    </span>
+    <ul class="header__list__nav">
       <li class="header__list__nav__link"><a routerLink="/">Accueil</a></li>
       <li class="header__list__nav__link">
         <a routerLink="/healthcare">Soins</a>
@@ -22,6 +22,17 @@
       <li class="header__list__nav__contact">
         <a routerLink="/contact">Contact</a>
       </li> -->
-    </div>
-  </ul>
+      <li>
+        <a
+          class="header__list__btn"
+          type="button"
+          [href]="bookingUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          (click)="onBookingClick()"
+          >Réservation
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>
