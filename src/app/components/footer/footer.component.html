@@ -1,0 +1,48 @@
+<footer class="footer">
+  <div class="footer__content">
+    <div class="footer__logo">
+      <img src="assets/logo.png" alt="Logo de Jean-Luc Laffuge" />
+      <h4 class="footer__title">Cinq de cœur</h4>
+    </div>
+
+    <div class="footer__contact">
+      <h4 class="footer__subtitle">Contact</h4>
+      <a class="footer__text" [href]="'https://www.google.com/maps/search/' + encodeAddress(contactDetails.address)" target="_blank" rel="noopener noreferrer">
+        {{ contactDetails.address }}
+      </a>
+      <a class="footer__text" [href]="'tel:' + contactDetails.phone">
+        {{ contactDetails.phone }}
+      </a>
+      <a class="footer__text" [href]="'mailto:' + contactDetails.email">
+        {{ contactDetails.email }}
+      </a>
+    </div>
+
+    <div class="footer__links">
+      <div class="footer__links-group">
+        <h4 class="footer__subtitle">Social</h4>
+        <ul>
+          @for (socialLink of socialLinks; track $index) {
+            <li class="footer__links-item social">
+              <a [href]="socialLink.url" target="_blank" rel="noopener noreferrer">{{ socialLink.label }}</a>
+            </li>
+          }
+        </ul>
+      </div>
+      <div class="footer__links-group">
+        <h4 class="footer__subtitle">Réglementations</h4>
+        <ul>
+          @for (otherLink of otherLinks; track $index) {
+            <li class="footer__links-item">
+              <a [href]="otherLink.url" target="_blank" rel="noopener noreferrer">{{ otherLink.label }}</a>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="footer__credits">
+    <p>© {{ currentYear }} Jean-Luc Laffuge - Tous droits réservés.</p>
+  </div>
+</footer>
