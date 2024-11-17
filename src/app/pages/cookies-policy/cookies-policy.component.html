@@ -1,0 +1,21 @@
+<div class="cookie__policy">
+  <h2 class="cookie__policy__title">Politique de cookies</h2>
+  <div class="cookie__policy__content">
+    @for (cookie of cookiePolicy; track $index) {
+      <span class="cookie__policy__content__section">
+        <h3 class="cookie__policy__content__section__subtitle">{{ cookie.title }}</h3>
+        @for (cookie of cookie.content; track $index) {
+          @if (isString(cookie)) {
+            <p class="cookie__policy__content__section__txt">{{ cookie }}</p>
+          } @else if (isObject(cookie)) {
+            <div class="cookie__policy__content__object">
+              @for (key of objectKeys(cookie); track $index) {
+                <p class="cookie__policy__content__section__txt"><strong>{{ key }}</strong>: {{ cookie[key] }}</p>
+              }
+            </div>
+          }
+        }
+      </span>
+    }
+  </div>
+</div>
