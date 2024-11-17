@@ -1,0 +1,80 @@
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  padding: 20px;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    > div {
+      flex: 1;
+      text-align: center;
+    }
+  }
+  &__logo {
+    text-align: center;
+    img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    &__title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+  &__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    height: 135px;
+    gap: 5px;
+    &__text {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: 135px;
+    &-group {
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    &-item {
+      a {
+        color: var(--color-text);
+        text-decoration: none;
+        font-weight: 500;
+        &:hover {
+          text-decoration: underline;
+          color: var(--color-secondary);
+        }
+      }
+    }
+  }
+  &__credits {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+hr {
+  border: 1px solid var(--color-text);
+  margin: 20px auto;
+  width: 50%;
+}
+.social {
+  color: var(--color-text);
+}
