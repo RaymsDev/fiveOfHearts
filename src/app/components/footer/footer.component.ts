@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { SITE_CONFIG } from '../../configs';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
@@ -16,8 +17,8 @@ export class FooterComponent {
     { label: 'Réservation', url: SITE_CONFIG['BOOKING'] },
   ];
   otherLinks = [
-    { label: 'Mentions légales', url: '#' },
-    { label: 'Politique de confidentialité', url: '#' },
+    { label: 'Mentions légales', url: '/legal-mentions' },
+    { label: 'Politique de confidentialité', url: '/privacy-policy' },
     { label: 'Politique de cookies', url: '#' },
   ]
   contactDetails = {
