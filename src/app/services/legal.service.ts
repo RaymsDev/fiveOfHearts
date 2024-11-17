@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { LegalMention, PrivacyPolicy } from '../models/legal.model';
+import { CookiePolicy, LegalMention, PrivacyPolicy } from '../models/legal.model';
 
 @Injectable({
   providedIn: 'root',
@@ -9,6 +9,7 @@ import { LegalMention, PrivacyPolicy } from '../models/legal.model';
 export class LegalService {
   private legalMentionsUrl = 'data/legal-mentions.json';
   private privacyPolicyUrl = 'data/privacy-policy.json';
+  private cookieUrl = 'data/cookie-policy.json';
 
   constructor(private http: HttpClient) {}
 
@@ -18,6 +19,10 @@ export class LegalService {
 
   getPrivacyPolicy(): Observable<PrivacyPolicy[]> {
     return this.http.get<PrivacyPolicy[]>(this.privacyPolicyUrl);
+  }
+
+  getCookiePolicy(): Observable<CookiePolicy[]> {
+    return this.http.get<CookiePolicy[]>(this.cookieUrl);
   }
 
   isString(value: unknown): value is string {

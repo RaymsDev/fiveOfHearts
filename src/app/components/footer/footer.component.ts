@@ -19,7 +19,7 @@ export class FooterComponent {
   otherLinks = [
     { label: 'Mentions légales', url: '/legal-mentions' },
     { label: 'Politique de confidentialité', url: '/privacy-policy' },
-    { label: 'Politique de cookies', url: '#' },
+    { label: 'Politique de cookies', url: '/cookies-policy' },
   ]
   contactDetails = {
     address: SITE_CONFIG['ADDRESS'],
