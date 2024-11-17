@@ -1,0 +1,21 @@
+<div class="legal-mentions">
+  <h2 class="legal-mentions__title">Mentions Légales</h2>
+  <div class="legal-mentions__content">
+    @for (mention of legalMentions; track $index) {
+      <span class="legal-mentions__content__section">
+        <h3 class="legal-mentions__content__section__subtitle">{{ mention.title }}</h3>
+        @for (mention of mention.content; track $index) {
+          @if (isString(mention)) {
+            <p class="legal-mentions__content__section__txt">{{ mention }}</p>
+          } @else if (isObject(mention)) {
+            <div class="legal-mentions__content__object">
+              @for (key of objectKeys(mention); track $index) {
+                <p class="legal-mentions__content__section__txt"><strong>{{ key }}</strong>: {{ mention[key] }}</p>
+              }
+            </div>
+          }
+        }
+      </span>
+    }
+  </div>
+</div>

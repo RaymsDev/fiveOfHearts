@@ -34,7 +34,7 @@
         <ul>
           @for (otherLink of otherLinks; track $index) {
             <li class="footer__links-item">
-              <a [href]="otherLink.url" target="_blank" rel="noopener noreferrer">{{ otherLink.label }}</a>
+              <a [routerLink]="otherLink.url">{{ otherLink.label }}</a>
             </li>
           }
         </ul>
