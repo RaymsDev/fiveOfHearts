@@ -1,0 +1,68 @@
+[
+  {
+    "title": "1. Introduction",
+    "content": [
+      "Bienvenue dans notre Politique de cookies ! Ce document explique ce que sont les cookies, comment nous les utilisons, lese cookies que nous utilisons, c'est-à-dire les informations que nous collectons via les cookies et comment ces informations sont utilisées, et comment gérer les paramètres des cookies.",
+      "Les cookies sont de petits fichiers texte qui sont utilisés pour stocker des informations. Ils sont stockés sur votre appareil lorsque le site Web est chargé sur votre navigateur. Ces cookies nous aident à faire fonctionner le site correctement, à rendre le site plus sécurisé, à offrir une meilleure expérience utilisateur et à comprendre comment le site fonctionne et à analyser ce qui fonctionne et ce qui doit être amélioré.",
+      "Comme la plupart des services en ligne, notre site Web utilise des cookies internes et des cookies tiers à plusieurs fins."
+    ]
+  },
+  {
+    "title": "2. Types de cookies",
+    "content": [
+      {
+        "Essentiels": [
+          "Ces cookies sont nécessaires pour que vous puissiez utiliser toutes les fonctionnalités du site. Ils permettent de maintenir les sessions utilisateur et de prévenir toute menace à la sécurité. Ils ne collectent ni ne stockent aucune information personnelle."
+        ]
+      },
+      {
+        "Statistiques": [
+          "Ces cookies stockent des informations telles que le nombre de visiteurs du site Web, le nombre de visiteurs uniques, quelles pages du site Web ont été visitées, l’origine de la visite, etc. Ces données nous aident à comprendre et à analyser les performances du site Web et là où il doit être amélioré."
+        ]
+      },
+      {
+        "Marketing": [
+          "Notre site Web affiche des publicités. Ces cookies sont utilisés pour personnaliser les publicités que nous vous montrons afin qu'elles aient un sens pour vous. Ces cookies nous aident également à suivre l'efficacité de ces campagnes publicitaires. Les informations stockées dans ces cookies peuvent également être utilisées par les fournisseurs de publicités tiers pour vous montrer des annonces sur d'autres sites Web sur le navigateur également."
+        ]
+      },
+      {
+        "Fonctionnels": [
+          "Ce sont les cookies qui aident certaines fonctionnalités non essentielles sur notre site Web. Ces fonctionnalités incluent l'intégration de contenu tel que des vidéos ou le partage de contenu du site Web sur des plateformes de médias sociaux."
+        ]
+      },
+      {
+        "Préférences": [
+          "Ces cookies nous aident à stocker vos paramètres et préférences de navigation comme les préférences linguistiques afin que vous ayez une expérience meilleure et plus efficace lors de vos prochaines visites sur le site Web."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "3. Comment nous utilisons les cookies",
+    "content": [
+      {
+        "Gestion des cookies": [
+          "Vous pouvez modifier vos préférences de cookies à tout moment en cliquant sur le bouton ci-dessous. Cela vous permettra de revisiter la bannière de consentement aux cookies et de modifier vos préférences ou de retirer votre consentement immédiatement."
+        ]
+      },
+      {
+        "Paramètres des cookies": [
+          "De plus, différents navigateurs proposent différentes méthodes pour bloquer et supprimer les cookies utilisés par les sites Web. Vous pouvez modifier les paramètres de votre navigateur pour bloquer/supprimer les cookies. Pour en savoir plus sur la gestion et la suppression des cookies, visitez wikipedia.org, www.allaboutcookies.org."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "4. Lexique.",
+    "content": [
+      {
+        "Terme": "Cookies internes",
+        "Définition": "Les cookies internes sont principalement nécessaires pour que le site Web fonctionne de la bonne manière, et ils ne collectent aucune de vos données personnellement identifiables."
+      },
+      {
+        "Terme": "Cookies tiers",
+        "Définition": "Les cookies tiers utilisés sur notre site Web servent principalement à comprendre comment le site Web fonctionne, comment vous interagissez avec notre site Web, à maintenir la sécurité de nos services, à fournir des publicités pertinentes pour vous, et dans l’ensemble, à vous offrir une meilleure expérience utilisateur et à accélérer vos futures interactions avec notre site Web."
+      }
+    ]
+  }
+]
