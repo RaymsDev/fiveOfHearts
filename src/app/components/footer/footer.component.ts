@@ -31,4 +31,12 @@ export class FooterComponent {
   encodeAddress(address: string): string {
     return encodeURIComponent(address);
   }
+
+  encodeToBase64(data: string): string {
+    return btoa(data);
+  }
+
+  decodeFromBase64(encodedData: string): string {
+    return atob(encodedData);
+  }
 }
