@@ -17,6 +17,6 @@ export class HeaderComponent {
   constructor(private analyticsService: AnalyticsService) {}
 
   onBookingClick(): void {
-    this.analyticsService.trackEvent('booking', 'home-page');
+    this.analyticsService.trackEvent('booking', 'navbar');
   }
 }
