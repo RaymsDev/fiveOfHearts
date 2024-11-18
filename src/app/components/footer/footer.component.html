@@ -10,11 +10,11 @@
       <a class="footer__text" [href]="'https://www.google.com/maps/search/' + encodeAddress(contactDetails.address)" target="_blank" rel="noopener noreferrer">
         {{ contactDetails.address }}
       </a>
-      <a class="footer__text" [href]="'tel:' + contactDetails.phone">
-        {{ contactDetails.phone }}
+      <a class="footer__text" [href]="'tel:' + decodeFromBase64(contactDetails.phone)">
+        {{ decodeFromBase64(contactDetails.phone) }}
       </a>
-      <a class="footer__text" [href]="'mailto:' + contactDetails.email">
-        {{ contactDetails.email }}
+      <a class="footer__text" [href]="'mailto:' + decodeFromBase64(contactDetails.email)">
+        {{ decodeFromBase64(contactDetails.email) }}
       </a>
     </div>
 
