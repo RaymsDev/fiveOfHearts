@@ -9,3 +9,5 @@
 - [x] Add Google Analytics
 - [ ] Add link to booking page in Google Map for pregnancy massage
 - [ ] Check schedule on [Pages Jaunes](https://www.pagesjaunes.fr/pros/60281866)
+- [x] Add captcha on footer to display contact
+- [ ] Change the captcha key to match the correct account (I couldn't add the localhost domain for testing, so I recreated one on a personal account)

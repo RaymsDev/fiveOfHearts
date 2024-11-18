@@ -33,12 +33,14 @@
   &__contact {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 135px;
     gap: 5px;
-    &__text {
-      margin: 0;
-      font-size: 0.9rem;
-    }
+  }
+  &__text {
+    margin: 0;
+    font-size: 0.9rem;
+    width: fit-content;
   }
   &__links {
     display: flex;
@@ -77,4 +79,9 @@ hr {
 }
 .social {
   color: var(--color-text);
+}
+re-captcha {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
