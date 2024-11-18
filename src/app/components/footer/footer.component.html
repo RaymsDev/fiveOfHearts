@@ -5,17 +5,44 @@
       <h4 class="footer__title">Cinq de cœur</h4>
     </div>
 
-    <div class="footer__contact">
-      <h4 class="footer__subtitle">Contact</h4>
-      <a class="footer__text" [href]="'https://www.google.com/maps/search/' + encodeAddress(contactDetails.address)" target="_blank" rel="noopener noreferrer">
-        {{ contactDetails.address }}
-      </a>
-      <a class="footer__text" [href]="'tel:' + decodeFromBase64(contactDetails.phone)">
-        {{ decodeFromBase64(contactDetails.phone) }}
-      </a>
-      <a class="footer__text" [href]="'mailto:' + decodeFromBase64(contactDetails.email)">
-        {{ decodeFromBase64(contactDetails.email) }}
-      </a>
+    <div>
+      @if (!captchaVerified) {
+        <h4 class="footer__subtitle">Contact</h4>
+        <re-captcha
+          [siteKey]="siteConfig['RECAPTCHA_SITE_KEY_TEST']"
+          (resolved)="onCaptchaResolved($event)"
+        >
+        </re-captcha>
+      }
+
+      @if (captchaVerified) {
+        <div class="footer__contact">
+          <h4 class="footer__subtitle">Contact</h4>
+          <a
+            class="footer__text"
+            [href]="
+              'https://www.google.com/maps/search/' +
+              encodeAddress(contactDetails.address)
+            "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {{ contactDetails.address }}
+          </a>
+          <a
+            class="footer__text"
+            [href]="'tel:' + decodeFromBase64(contactDetails.phone)"
+          >
+            {{ decodeFromBase64(contactDetails.phone) }}
+          </a>
+          <a
+            class="footer__text"
+            [href]="'mailto:' + decodeFromBase64(contactDetails.email)"
+          >
+            {{ decodeFromBase64(contactDetails.email) }}
+          </a>
+        </div>
+      }
     </div>
 
     <div class="footer__links">
@@ -24,7 +51,12 @@
         <ul>
           @for (socialLink of socialLinks; track $index) {
             <li class="footer__links-item social">
-              <a [href]="socialLink.url" target="_blank" rel="noopener noreferrer">{{ socialLink.label }}</a>
+              <a
+                [href]="socialLink.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                >{{ socialLink.label }}</a
+              >
             </li>
           }
         </ul>
@@ -41,7 +73,7 @@
       </div>
     </div>
   </div>
-  <hr>
+  <hr />
   <div class="footer__credits">
     <p>© {{ currentYear }} Jean-Luc Laffuge - Tous droits réservés.</p>
   </div>
