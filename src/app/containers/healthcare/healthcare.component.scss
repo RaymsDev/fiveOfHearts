@@ -18,7 +18,6 @@
     align-items: center;
     justify-content: center;
     gap: 100px;
-    width: 90%;
     a {
       transition: all 0.3s;
       &:hover {
@@ -38,10 +37,56 @@
     cursor: pointer;
     transition: all 0.3s;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    margin: 20px auto 100px;
+    margin: 50px auto;
     &:hover {
       background-color: var(--color-secondary);
       transform: scale(1.02);
+    }
+  }
+}
+
+/* Responsive Rules */
+@media (max-width: 1200px) {
+  .healthcare {
+    &__content {
+      gap: 50px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .healthcare {
+    &__others {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .healthcare {
+    &__title {
+      margin: 10px auto;
+    }
+    &__content {
+      width: 80%;
+      flex-direction: column;
+      a {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .healthcare {
+    &__title {
+      font-size: 1.5rem;
+    }
+    &__content {
+      gap: 20px;
+    }
+    &__others {
+      font-size: 1rem;
+      margin: 20px auto 50px;
     }
   }
 }

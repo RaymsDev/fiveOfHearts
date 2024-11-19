@@ -1,7 +1,7 @@
 .about {
   padding: 2rem;
   max-width: 1000px;
-  margin: 25px auto;
+  margin: 100px auto 50px;
   background-color: var(--color-tertiary);
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -45,7 +45,7 @@
       }
     }
   }
-  .about__list {
+  &__list {
     padding-left: 1.5rem;
     list-style-type: disc;
     li {
@@ -59,6 +59,66 @@
       text-decoration: none;
       &:hover {
         color: var(--color-text-dark);
+      }
+    }
+  }
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 1024px) {
+  .about {
+    max-width: none;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin: 100px auto 25px;
+    &__title {
+      font-size: 2rem;
+    }
+    &__subtitle {
+      font-size: 1.5rem;
+    }
+    &__txt {
+      font-size: 0.9rem;
+    }
+    &__social {
+      gap: 1rem;
+    }
+    &__list {
+      padding-left: 1rem;
+      li {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    &__title {
+      font-size: 1.5rem;
+      margin: 50px auto 10px;
+    }
+    &__subtitle {
+      font-size: 1.2rem;
+    }
+    &__txt {
+      font-size: 0.8rem;
+    }
+    &__social {
+      gap: 0.5rem;
+      a {
+        margin: 0.5rem auto;
+        font-size: 1rem;
+      }
+    }
+    &__list {
+      padding-left: 0.5rem;
+      li {
+        font-size: 0.8rem;
       }
     }
   }

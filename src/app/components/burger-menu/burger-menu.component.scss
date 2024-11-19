@@ -1,0 +1,113 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: var(--color-background);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  color: var(--color-text);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 0 5%;
+  &__logo {
+    &-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+    }
+  }
+  &__menu {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    &-list {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+    }
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+    &-link {
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.2s;
+      color: var(--color-text-dark);
+      &:hover {
+        color: var(--color-text);
+      }
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      background-color: var(--color-primary-button);
+      color: var(--color-text);
+      padding: 15px 20px;
+      border-radius: 5px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: var(--color-primary-button-hover);
+      }
+    }
+  }
+  &__hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    &-bar {
+      width: 25px;
+      height: 3px;
+      background: var(--color-text);
+      transition: transform 0.3s ease-in-out;
+    }
+    &.active {
+      &-bar:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+      }
+      &-bar:nth-child(2) {
+        opacity: 0;
+      }
+      &-bar:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+      }
+    }
+  }
+
+  /* Responsive Rules */
+  @media (max-width: 768px) {
+    &__menu {
+      position: fixed;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      height: calc(100vh - 70px);
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      background-color: var(--color-background);
+      transform: translateX(100%);
+      z-index: 1000;
+      padding-top: 20vh;
+      &.active {
+        transform: translateX(0);
+      }
+      &-link {
+        font-size: 1.5rem;
+        margin: auto;
+      }
+    }
+    &__menu-list {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    &__hamburger {
+      display: flex;
+    }
+  }
+}

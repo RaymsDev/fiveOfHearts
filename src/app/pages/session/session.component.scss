@@ -1,13 +1,15 @@
 .session {
-  background-color: var(--color-background);
-  padding: 3rem 2rem;
+  background-color: var(--color-tertiary);
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   max-width: 1000px;
-  margin: 2rem auto;
+  margin: 100px auto 50px;
+  padding: 2rem;
   &__title {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -23,7 +25,7 @@
     line-height: 1.6;
     margin-bottom: 1rem;
     strong {
-      color: var(--color-primary);
+      color: var(--color-secondary);
       font-weight: 700;
     }
   }
@@ -62,6 +64,56 @@
         color: var(--color-accent);
         font-size: 1.2rem;
         line-height: 1;
+      }
+    }
+  }
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 1024px) {
+  .session {
+    max-width: none;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .session {
+    margin: 100px auto 25px;
+    &__title {
+      font-size: 2rem;
+    }
+    &__subtitle {
+      font-size: 1.5rem;
+    }
+    &__txt {
+      font-size: 0.9rem;
+    }
+    &__list {
+      padding-left: 1rem;
+      li {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .session {
+    &__title {
+      font-size: 1.5rem;
+      margin: 50px auto 10px;
+    }
+    &__subtitle {
+      font-size: 1.2rem;
+    }
+    &__txt {
+      font-size: 0.8rem;
+    }
+    &__list {
+      padding-left: 1rem;
+      li {
+        font-size: 0.9rem;
       }
     }
   }

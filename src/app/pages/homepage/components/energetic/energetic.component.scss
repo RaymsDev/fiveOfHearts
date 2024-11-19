@@ -18,26 +18,48 @@
       margin: 0 auto 20px;
       font-weight: 700;
     }
-    &__txt {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-      max-width: 600px;
+  }
+}
+
+/* Responsive Rules */
+@media (max-width: 1024px) {
+  .energetic {
+    &__content {
+      width: 100%;
+      &__img {
+        width: 200px;
+        height: 40vh;
+      }
+      &__title {
+        font-size: 1.5rem;
+      }
     }
-    &__btn {
-      font-size: 1.5rem;
-      font-weight: 700;
-      width: fit-content;
-      background-color: var(--color-primary);
-      color: var(--color-text);
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: all 0.3s;
-      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-      &:hover {
-        background-color: var(--color-secondary);
-        transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .energetic {
+    &__content {
+      &__img {
+        width: 100%;
+        height: 40vh;
+      }
+      &__title {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .energetic {
+    &__content {
+      &__title {
+        font-size: 1.5rem;
+      }
+      &__img {
+        width: 100%;
+        height: 20vh;
       }
     }
   }

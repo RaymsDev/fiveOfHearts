@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Soins énergétiques",
     "description": "Offrez-vous un moment de purification et d’harmonie grâce aux Soins Énergétiques. Ce soin unique agit en profondeur pour équilibrer vos chakras, augmenter votre taux vibratoire et libérer les blocages énergétiques. Adapté à tous, il aide à retrouver vitalité, clarté mentale et sérénité, tout en stimulant votre énergie vitale.",
-    "img": "assets/massage_rocks.jpg",
+    "img": "assets/massage_rocks.webp",
     "duration": "1h",
     "prices": "55€",
     "audience": "Tout public"
@@ -12,7 +12,7 @@
     "id": 2,
     "title": "Massage Holistique",
     "description": "Redécouvrez l'harmonie entre le corps et l'esprit avec le Massage Holistique, une approche complète et enveloppante. Grâce à des mouvements fluides, ce massage aide à libérer les tensions, améliorer la circulation et apaiser l’esprit. Idéal pour se reconnecter à soi-même, il procure un profond sentiment de bien-être et revitalise le corps en douceur.",
-    "img": "assets/holistic.jpg",
+    "img": "assets/holistic.webp",
     "duration": "1h15",
     "prices": "65€",
     "audience": "Adultes"
@@ -21,7 +21,7 @@
     "id": 3,
     "title": "Massage Prénatal",
     "description": "Prenez soin de votre corps pendant la grossesse avec le Massage Prénatal, une pratique spécialement conçue pour soulager les douleurs lombaires, améliorer la circulation et réduire le stress. Ce soin doux et adapté offre un véritable moment de relaxation pour la future maman tout en créant un lien apaisant avec son bébé.",
-    "img": "assets/pregnant2.jpg",
+    "img": "assets/pregnant2.webp",
     "duration": "1h",
     "prices": "60€",
     "audience": "Adultes"
@@ -30,7 +30,7 @@
     "id": 4,
     "title": "Barrage des brûlures",
     "description": "Découvrez une méthode ancestrale, souvent appelée «coupeur de feu», pour apaiser instantanément les brûlures, qu'elles soient superficielles ou profondes. Ce soin aide à réduire les douleurs intenses, favoriser la cicatrisation et calmer les sensations de chaleur ou de brûlure. Une solution naturelle pour les adultes et les enfants, adaptée aux petits accidents du quotidien.",
-    "img": "assets/burn.jpg",
+    "img": "assets/burn.webp",
     "duration": "20-30 min",
     "prices": "35€",
     "audience": "Adultes - Enfants"
@@ -39,7 +39,7 @@
     "id": 5,
     "title": "Massage Knap",
     "description": "Soulagez efficacement les tensions musculaires grâce au Massage Knap, une technique thérapeutique ciblée. Ce soin se concentre sur 18 points stratégiques du corps pour libérer les tensions accumulées et stimuler la circulation énergétique. Recommandé pour les personnes sujettes au stress, aux douleurs chroniques ou à la fatigue musculaire, ce massage offre un véritable moment de lâcher-prise et de bien-être.",
-    "img": "assets/massage_woman.jpg",
+    "img": "assets/massage_woman.webp",
     "duration": "45 min",
     "prices": "45€",
     "audience": "Adultes"
@@ -48,7 +48,7 @@
     "id": 6,
     "title": "Bougies d'oreille Hopi",
     "description": "Redécouvrez une tradition ancestrale avec les bougies d'oreille Hopi. Ce soin naturel aide à éliminer les impuretés auriculaires tout en offrant une profonde relaxation. Grâce à leur action douce et calorique, ces bougies favorisent une meilleure hygiène auriculaire et procurent une sensation de calme et de bien-être. Idéal pour apaiser les tensions du quotidien.",
-    "img": "assets/ears.jpg",
+    "img": "assets/ears.webp",
     "duration": "60 min",
     "prices": "50€",
     "audience": "Tout public"
@@ -57,7 +57,7 @@
     "id": 7,
     "title": "Micro massage crânien",
     "description": "Profitez d'un moment de détente absolue avec le micro massage crânien. En ciblant les points d'énergie du crâne et de la nuque, ce soin aide à soulager les maux de tête, réduire le stress et libérer les tensions musculaires. Un massage idéal pour retrouver équilibre, clarté mentale et bien-être global.",
-    "img": "assets/neck_massage.jpg",
+    "img": "assets/neck_massage.webp",
     "duration": "1h30",
     "prices": "60€",
     "audience": "Tout public"

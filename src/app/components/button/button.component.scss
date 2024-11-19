@@ -16,3 +16,23 @@
     background-color: var(--color-primary-button-hover);
   }
 }
+
+/* Responsive Rules */
+@media screen and (max-width: 1024px) {
+  .button {
+    bottom: 40px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .button {
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .button {
+    bottom: 50px;
+    right: 20px;
+  }
+}

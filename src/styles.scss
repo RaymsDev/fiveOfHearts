@@ -43,3 +43,10 @@ a {
   text-decoration: none;
   color: var(--color-text);
 }
+
+/* Responsive Rules*/
+@media (max-width: 768px) {
+  body {
+    margin-top: 70px;
+  }
+}

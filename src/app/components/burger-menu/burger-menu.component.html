@@ -1,0 +1,44 @@
+<nav class="navbar">
+  <a routerLink="/" class="navbar__logo">
+    <img src="assets/logo.webp" alt="Logo" class="navbar__logo-image" />
+  </a>
+  <div class="navbar__menu" [class.active]="isMenuOpen">
+    <ul class="navbar__menu-list">
+      <li class="navbar__menu-item">
+        <a routerLink="/" (click)="closeMenu()" class="navbar__menu-link"
+          >Accueil</a
+        >
+      </li>
+      <li class="navbar__menu-item">
+        <a
+          routerLink="/healthcare"
+          (click)="closeMenu()"
+          class="navbar__menu-link"
+          >Soins</a
+        >
+      </li>
+      <li class="navbar__menu-item">
+        <a routerLink="/about" (click)="closeMenu()" class="navbar__menu-link"
+          >Qui suis-je</a
+        >
+      </li>
+      <li class="navbar__menu-item">
+        <a
+          [href]="bookingUrl"
+          target="_blank"
+          rel="noopener noreferrer"
+          (click)="onBookingClick()"
+          class="navbar__menu-link btn"
+        >
+          Réservation
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="navbar__hamburger" (click)="toggleMenu()">
+    <span class="navbar__hamburger-bar"></span>
+    <span class="navbar__hamburger-bar"></span>
+    <span class="navbar__hamburger-bar"></span>
+  </div>
+</nav>

@@ -32,14 +32,14 @@
     z-index: 2;
     &__round {
       position: relative;
-      width: 300px;
+      width: 400px;
       height: 400px;
       border-radius: 100%;
       overflow: hidden;
       &__overlay {
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 400px;
         background-color: var(--color-secondary);
         border-radius: 100%;
         z-index: 1;
@@ -47,7 +47,7 @@
       &__img {
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: 400px;
         object-fit: cover;
         z-index: 2;
       }
@@ -56,7 +56,7 @@
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      max-width: 600px;
+      width: 70%;
       &__name {
         font-size: 2rem;
         font-weight: 700;
@@ -69,7 +69,7 @@
         width: 20%;
       }
       &__txt {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.5;
       }
       &__btn {
@@ -86,6 +86,100 @@
         &:hover {
           background-color: var(--color-secondary);
           transform: scale(1.02);
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Rules */
+@media (max-width: 1024px) {
+  .about {
+    &__content {
+      gap: 40px;
+      &__round {
+        width: 300px;
+        height: 300px;
+        &__img {
+          height: 300px;
+        }
+        &__overlay {
+          height: 300px;
+        }
+      }
+      &__flex {
+        width: 80%;
+        &__name {
+          font-size: 1.5rem;
+        }
+        hr {
+          width: 15%;
+        }
+        &__txt {
+          font-size: 0.8rem;
+        }
+        &__btn {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    &__content {
+      gap: 30px;
+      flex-direction: column;
+      &__round {
+        width: 250px;
+        height: 250px;
+        &__img {
+          height: 250px;
+        }
+        &__overlay {
+          height: 250px;
+        }
+      }
+      &__flex {
+        width: 90%;
+        &__name {
+          font-size: 1.2rem;
+        }
+        &__btn {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    &__img {
+      img {
+        height: 100vh;
+      }
+    }
+    &__content {
+      gap: 20px;
+      &__round {
+        width: 200px;
+        height: 200px;
+        &__img {
+          height: 200px;
+        }
+        &__overlay {
+          height: 200px;
+        }
+      }
+      &__flex {
+        width: 100%;
+        &__name {
+          font-size: 1rem;
+        }
+        &__btn {
+          font-size: 0.8rem;
         }
       }
     }

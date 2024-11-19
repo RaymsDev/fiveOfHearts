@@ -3,7 +3,7 @@
     "title": "Qu'est-ce que les soins énergétiques ?",
     "blocks": [
       {
-        "image": "assets/zen.jpg",
+        "image": "assets/zen.webp",
         "alt": "Une personne fait du yoga devant un soleil couchant devant l'océan",
         "sections": [
           {
@@ -17,7 +17,7 @@
         ]
       },
       {
-        "image": "assets/zen2.jpg",
+        "image": "assets/zen2.webp",
         "alt": "Pierres empilées sur du sable",
         "sections": [
           {
@@ -36,7 +36,7 @@
     "title": "Détails sur le Massage Holistique",
     "blocks": [
       {
-        "image": "assets/holistic.jpg",
+        "image": "assets/holistic.webp",
         "alt": "Massage holistique en cours",
         "sections": [
           {
@@ -50,7 +50,7 @@
         ]
       },
       {
-        "image": "assets/towel.jpg",
+        "image": "assets/towel.webp",
         "alt": "Moment de relaxation et bienfaits du massage",
         "sections": [
           {
@@ -69,7 +69,7 @@
     "title": "Massage pour Femme Enceinte",
     "blocks": [
       {
-        "image": "assets/pregnant2.jpg",
+        "image": "assets/pregnant2.webp",
         "alt": "Femme enceinte allongée",
         "sections": [
           {
@@ -83,7 +83,7 @@
         ]
       },
       {
-        "image": "assets/pregnant3.jpg",
+        "image": "assets/pregnant3.webp",
         "alt": "Femme enceinte allongée",
         "sections": [
           {

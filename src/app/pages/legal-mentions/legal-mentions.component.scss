@@ -1,7 +1,7 @@
 .legal-mentions {
   padding: 2rem;
   max-width: 1000px;
-  margin: 25px auto;
+  margin: 100px auto 50px;
   background-color: var(--color-tertiary);
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -35,4 +35,50 @@
 }
 strong {
   color: var(--color-secondary);
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 1024px) {
+  .legal-mentions {
+    max-width: none;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .legal-mentions {
+    margin: 100px auto 25px;
+    &__title {
+      font-size: 2rem;
+    }
+    &__content {
+      &__section {
+        &__subtitle {
+          font-size: 1.5rem;
+        }
+        &__txt {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .legal-mentions {
+    &__title {
+      font-size: 1.5rem;
+      margin: 50px auto 10px;
+    }
+    &__content {
+      &__section {
+        &__subtitle {
+          font-size: 1.2rem;
+        }
+        &__txt {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
 }

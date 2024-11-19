@@ -2,20 +2,26 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Healthcare } from '../../models/healthcare.model';
 import { ButtonComponent } from '../button/button.component';
 import { SITE_CONFIG } from '../../configs';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, CommonModule],
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
 })
 export class CardComponent implements OnInit {
   @Input() healthcareItem!: Healthcare;
   bookingUrl: string = '';
+  isExpanded: boolean = false;
 
   ngOnInit() {
     this.bookingUrl = this.getBookingUrl();
+  }
+
+  toggleDescription() {
+    this.isExpanded = !this.isExpanded;
   }
 
   private getBookingUrl(): string {

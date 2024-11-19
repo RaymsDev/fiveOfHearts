@@ -6,7 +6,12 @@
   />
   <div class="card__body">
     <h2 class="card__body__title">{{ healthcareItem.title }}</h2>
-    <p class="card__body__description">{{ healthcareItem.description }}</p>
+    <p class="card__body__description" [ngClass]="{ expanded: isExpanded }">
+      {{ healthcareItem.description }}
+    </p>
+    <button class="card__body__btn" (click)="toggleDescription()">
+      {{ isExpanded ? "Réduire" : "Afficher la suite" }}
+    </button>
     <div class="card_body__ctn">
       <p class="card__body__txt">
         <strong>Durée :</strong> {{ healthcareItem.duration }}
