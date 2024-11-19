@@ -1,17 +1,7 @@
 <section class="healthcare">
   <h2 class="healthcare__title">Soins</h2>
   <hr />
-  <div class="healthcare__content">
-    <a [routerLink]="['/massage', 'energyTherapy']">
-      <app-energetic></app-energetic>
-    </a>
-    <a [routerLink]="['/massage', 'holisticMassage']">
-      <app-massages></app-massages>
-    </a>
-    <a [routerLink]="['/massage', 'prenatalMassage']">
-      <app-pregnant></app-pregnant>
-    </a>
-  </div>
+  <app-massages-home></app-massages-home>
   <a [routerLink]="['/healthcare']" class="healthcare__others"
     >Découvrir nos autres soins...</a
   >

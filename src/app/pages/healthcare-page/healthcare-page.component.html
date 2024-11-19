@@ -1,0 +1,23 @@
+<h2>Découvrez tous nos soins</h2>
+<section class="introduction">
+  <p class="introduction__txt">
+    Explorez l'ensemble des soins que nous proposons, adaptés à vos besoins.
+  </p>
+  <p class="introduction__txt">
+    Pour toute question ou demande de renseignements, n'hésitez pas à nous
+    contacter.
+  </p>
+  <p class="introduction__txt">
+    Retrouvez nos coordonnées en bas de cette page.
+  </p>
+  <p class="introduction__txt">
+    <strong>Tarifs enfants :</strong> bénéficiez d'une réduction de 10 € sur
+    l'ensemble des soins adaptés.
+  </p>
+</section>
+
+<section class="healthcare-container">
+  @for (item of healthcareData; track $index) {
+    <app-card [healthcareItem]="item"></app-card>
+  }
+</section>

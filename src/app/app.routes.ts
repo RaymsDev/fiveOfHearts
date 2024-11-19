@@ -1,29 +1,41 @@
 import { Routes } from '@angular/router';
-import { HomepageComponent } from './pages/homepage/homepage.component';
-import { HealthcareComponent } from './pages/healthcare/healthcare.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { GalleryComponent } from './pages/gallery/gallery.component';
-import { PricesComponent } from './pages/prices/prices.component';
-import { SessionComponent } from './pages/session/session.component';
-
-import { MassageComponent } from './pages/massage/massage.component';
-import { LegalMentionsComponent } from './pages/legal-mentions/legal-mentions.component';
-import { PrivacyPolicyComponent } from './pages/privacy-policy/privacy-policy.component';
-import { CookiesPolicyComponent } from './pages/cookies-policy/cookies-policy.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { HealthcarePageComponent } from './pages/healthcare-page/healthcare-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { SessionPageComponent } from './pages/session-page/session-page.component';
 
 export const routes: Routes = [
-  { path: '', component: HomepageComponent },
-  { path: 'healthcare', component: HealthcareComponent },
-  // {path: 'healthcare/:id', component: HealthcareComponent},
-  { path: 'about', component: AboutComponent },
-  { path: 'gallery', component: GalleryComponent },
-  { path: 'prices', component: PricesComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'session', component: SessionComponent },
-  { path: 'massage/:type', component: MassageComponent },
-  { path: 'legal-mentions', component: LegalMentionsComponent },
-  { path: 'privacy-policy', component: PrivacyPolicyComponent },
-  { path: 'cookies-policy', component: CookiesPolicyComponent },
+  { path: '', component: HomePageComponent },
+  { path: 'healthcare', component: HealthcarePageComponent },
+  { path: 'about', component: AboutPageComponent },
+  { path: 'session', component: SessionPageComponent },
+  {
+    path: 'massage/:type',
+    loadComponent: () =>
+      import(
+        './pages/massage-details-page/massage-details-page.component'
+      ).then((m) => m.MassageDetailsPageComponent),
+  },
+  {
+    path: 'legal-mentions',
+    loadComponent: () =>
+      import('./pages/legal-mentions-page/legal-mentions-page.component').then(
+        (m) => m.LegalMentionsPageComponent,
+      ),
+  },
+  {
+    path: 'privacy-policy',
+    loadComponent: () =>
+      import('./pages/privacy-policy-page/privacy-policy-page.component').then(
+        (m) => m.PrivacyPolicyPageComponent,
+      ),
+  },
+  {
+    path: 'cookies-policy',
+    loadComponent: () =>
+      import('./pages/cookies-policy-page/cookies-policy-page.component').then(
+        (m) => m.CookiesPolicyPageComponent,
+      ),
+  },
   { path: '**', redirectTo: '' },
 ];
