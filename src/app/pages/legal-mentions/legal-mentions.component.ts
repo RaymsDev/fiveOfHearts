@@ -8,7 +8,7 @@ import { Subject, takeUntil } from 'rxjs';
   standalone: true,
   imports: [],
   templateUrl: './legal-mentions.component.html',
-  styleUrl: './legal-mentions.component.scss'
+  styleUrl: './legal-mentions.component.scss',
 })
 export class LegalMentionsComponent implements OnInit, OnDestroy {
   legalMentions: LegalMention[] = [];
@@ -22,8 +22,8 @@ export class LegalMentionsComponent implements OnInit, OnDestroy {
       .getLegalMentions()
       .pipe(takeUntil(this.destroy$))
       .subscribe((data) => {
-      this.legalMentions = data;
-    });
+        this.legalMentions = data;
+      });
   }
 
   isString(value: unknown): value is string {

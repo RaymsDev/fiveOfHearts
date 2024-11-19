@@ -3,7 +3,9 @@
   <div class="privacy-policy__content">
     @for (policy of privacyPolicy; track $index) {
       <span class="privacy-policy__content__section">
-        <h3 class="privacy-policy__content__section__subtitle">{{ policy.title }}</h3>
+        <h3 class="privacy-policy__content__section__subtitle">
+          {{ policy.title }}
+        </h3>
         @for (policy of policy.content; track $index) {
           @if (isString(policy)) {
             <p class="privacy-policy__content__section__txt">{{ policy }}</p>
@@ -11,7 +13,8 @@
             <div class="privacy-policy__content__object">
               @for (key of objectKeys(policy); track $index) {
                 <p class="privacy-policy__content__section__txt">
-                  <strong>{{ key }}</strong>: {{ policy[key] }}
+                  <strong>{{ key }}</strong
+                  >: {{ policy[key] }}
                 </p>
               }
             </div>

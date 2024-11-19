@@ -8,10 +8,10 @@ import { LegalService } from '../../services/legal.service';
   standalone: true,
   imports: [],
   templateUrl: './cookies-policy.component.html',
-  styleUrl: './cookies-policy.component.scss'
+  styleUrl: './cookies-policy.component.scss',
 })
 export class CookiesPolicyComponent implements OnInit, OnDestroy {
-  cookiePolicy: CookiePolicy[] = []
+  cookiePolicy: CookiePolicy[] = [];
   objectKeys = Object.keys;
   destroy$ = new Subject<void>();
 
@@ -24,8 +24,7 @@ export class CookiesPolicyComponent implements OnInit, OnDestroy {
       .subscribe((data) => {
         this.cookiePolicy = data;
       });
-      console.log('Cookies Policy: ', this.cookiePolicy);
-
+    console.log('Cookies Policy: ', this.cookiePolicy);
   }
 
   isString(value: unknown): value is string {
