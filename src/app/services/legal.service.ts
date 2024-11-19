@@ -1,7 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { CookiePolicy, LegalMention, PrivacyPolicy } from '../models/legal.model';
+import {
+  CookiePolicy,
+  LegalMention,
+  PrivacyPolicy,
+} from '../models/legal.model';
 
 @Injectable({
   providedIn: 'root',
