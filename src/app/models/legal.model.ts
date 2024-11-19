@@ -12,6 +12,3 @@ export interface CookiePolicy {
   title: string;
   content: (string | { [key: string]: string | string[] })[];
 }
-
-
-
