@@ -13,11 +13,15 @@
       flex: 1;
       text-align: center;
     }
+    &__captcha {
+      height: 135px;
+    }
   }
   &__logo {
     text-align: center;
     img {
-      width: 100px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       margin-bottom: 10px;
     }
@@ -84,4 +88,47 @@ re-captcha {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+}
+
+/* Responsive Rules */
+@media (max-width: 1200px) {
+  .footer {
+    &__links {
+      gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    &__content {
+      flex-direction: column;
+    }
+    &__logo,
+    &__contact {
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--color-text);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__logo {
+      display: none;
+    }
+    &__content {
+      flex-direction: column-reverse;
+      gap: 50px;
+    }
+    &__contact {
+      border: none;
+    }
+    &__links {
+      flex-direction: column;
+    }
+    re-captcha {
+      max-width: 250px;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 .main-banner {
   position: relative;
   height: 94vh;
+  overflow: hidden;
   &__img {
     width: 100%;
     height: 100%;
@@ -15,14 +16,14 @@
     color: var(--color-text);
     z-index: 1;
     &__title {
-      font-size: 5rem;
+      font-size: clamp(2.5rem, 5vw, 5rem);
       margin-bottom: 0.5rem;
     }
     &__txt {
-      font-size: 2rem;
+      font-size: clamp(1.5rem, 3vw, 2rem);
     }
     &__name {
-      font-size: 1.5rem;
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
       font-weight: 700;
       margin-bottom: 0.5rem;
       background-color: var(--color-secondary);
@@ -35,39 +36,101 @@
     display: flex;
     gap: 25px;
     margin: 30px 0;
-    &__meet {
-      font-size: 1.5rem;
+    &__meet,
+    &__more {
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
       font-weight: 700;
       width: fit-content;
-      background-color: var(--color-primary-button);
-      color: var(--color-text);
-      padding: 16px;
+      padding: 0.8rem 1.2rem;
       border: none;
       border-radius: 5px;
       cursor: pointer;
       transition: all 0.3s;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
       &:hover {
+        transform: scale(1.05);
+      }
+    }
+    &__meet {
+      background-color: var(--color-primary-button);
+      color: var(--color-text);
+      &:hover {
         background-color: var(--color-primary-button-hover);
-        transform: scale(1.02);
       }
     }
     &__more {
-      font-size: 1.5rem;
-      font-weight: 700;
-      width: fit-content;
-      background-color: var(--color-background);
+      background-color: var(--color-primary);
       color: var(--color-text);
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: all 0.3s;
-      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-
       &:hover {
         background-color: var(--color-secondary);
-        transform: scale(1.02);
+      }
+    }
+  }
+}
+
+/* Responsive Rules */
+@media (max-width: 1024px) {
+  .main-banner {
+    height: auto;
+    &__content {
+      width: 70%;
+      left: 40%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-banner {
+    &__img {
+      height: 100vh;
+    }
+    &__content {
+      width: 90%;
+      left: 50%;
+      text-align: center;
+      &__name {
+        margin: auto;
+      }
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      &__meet,
+      &__more {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .main-banner {
+    &__img {
+      height: 75vh;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      &__title {
+        font-size: 1.5rem;
+      }
+      &__txt {
+        font-size: 1rem;
+      }
+      &__name {
+        font-size: 0.8rem;
+      }
+    }
+    &__button {
+      gap: 10px;
+      margin: 10px 0;
+      &__meet,
+      &__more {
+        padding: 0.3rem 0.8rem;
       }
     }
   }
