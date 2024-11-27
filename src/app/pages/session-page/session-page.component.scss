@@ -1,8 +1,7 @@
 .session {
   background-color: var(--color-tertiary);
-  border-radius: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   max-width: 1000px;
   margin: 100px auto 50px;
   padding: 2rem;
@@ -27,23 +26,6 @@
     strong {
       color: var(--color-secondary);
       font-weight: 700;
-    }
-  }
-  &__button {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 0.8rem 1.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--color-text);
-    background-color: var(--color-banner);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    &:hover {
-      background-color: var(--color-secondary);
     }
   }
   &__list {
