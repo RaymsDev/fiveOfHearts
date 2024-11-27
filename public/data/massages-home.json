@@ -3,24 +3,24 @@
     "title": "Massage holistique",
     "imageSrc": "assets/black_woman_massage.webp",
     "imageAlt": "Massage holistique en cours, une personne masse les épaules d'une autre",
-    "route": "holisticMassage"
+    "route": "holistic-massage"
   },
   {
     "title": "Soin énergétique",
     "imageSrc": "assets/massage_energetic.webp",
     "imageAlt": "Massage énergétique en cours",
-    "route": "energyTherapy"
+    "route": "energy-therapy"
   },
   {
     "title": "Massage prénatal",
     "imageSrc": "assets/pregnant.webp",
     "imageAlt": "Massage pour femme enceinte en cours",
-    "route": "prenatalMassage"
+    "route": "prenatal-massage"
   },
   {
     "title": "Soin entreprise",
     "imageSrc": "assets/massage_office.webp",
     "imageAlt": "Un homme en costume se fait masser la tête",
-    "route": "headMassage"
+    "route": "head-massage"
   }
 ]

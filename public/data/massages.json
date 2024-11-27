@@ -1,5 +1,5 @@
 {
-  "energyTherapy": {
+  "energy-therapy": {
     "title": "Qu'est-ce que les soins énergétiques ?",
     "blocks": [
       {
@@ -32,7 +32,7 @@
       }
     ]
   },
-  "holisticMassage": {
+  "holistic-massage": {
     "title": "Détails sur le Massage Holistique",
     "blocks": [
       {
@@ -65,7 +65,7 @@
       }
     ]
   },
-  "prenatalMassage": {
+  "prenatal-massage": {
     "title": "Massage pour Femme Enceinte",
     "blocks": [
       {
@@ -98,7 +98,7 @@
       }
     ]
   },
-  "headMassage": {
+  "head-massage": {
     "title": "Micro-Massage Crânien en entreprise",
     "blocks": [
       {
