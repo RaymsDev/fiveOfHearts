@@ -1,9 +1,10 @@
-import { Component, Inject } from '@angular/core';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { NgxGoogleAnalyticsModule } from '@hakimio/ngx-google-analytics';
-import { FooterComponent } from './components/footer/footer.component';
+import { filter } from 'rxjs';
 import { BurgerMenuComponent } from './components/burger-menu/burger-menu.component';
-import { DOCUMENT } from '@angular/common';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -21,11 +22,18 @@ export class AppComponent {
   constructor(
     private router: Router,
     @Inject(DOCUMENT) private document: Document,
+    @Inject(PLATFORM_ID) private platformId: Object,
   ) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
+    this.router.events
+      .pipe(
+        filter(
+          (event) =>
+            isPlatformBrowser(this.platformId) &&
+            event instanceof NavigationEnd,
+        ),
+      )
+      .subscribe(() => {
         this.document.defaultView?.scrollTo(0, 0);
-      }
-    });
+      });
   }
 }
