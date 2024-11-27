@@ -1,0 +1,21 @@
+.filter {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+
+  button {
+    padding: 10px;
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-secondary);
+    }
+  }
+}

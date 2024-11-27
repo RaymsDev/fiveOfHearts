@@ -1,0 +1,23 @@
+.selected-office {
+  text-align: center;
+  margin: 20px auto;
+  h4 {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin: 0 auto 10px;
+  }
+  p {
+    font-size: 1rem;
+    color: var(--color-text-dark);
+  }
+}
+
+/* Responsive Rules */
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}

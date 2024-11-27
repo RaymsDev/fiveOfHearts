@@ -4,6 +4,8 @@ export interface Healthcare {
   description: string;
   img: string;
   duration: string;
-  prices: string;
   audience: string;
+  prices: {
+    [cabinet: string]: string;
+  };
 }

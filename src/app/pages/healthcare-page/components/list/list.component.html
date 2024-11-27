@@ -1,0 +1,8 @@
+<section class="healthcare-container">
+  @for (item of healthcareItems; track $index) {
+    <app-card
+      [healthcareItem]="item"
+      [selectedOffice]="selectedOffice"
+    ></app-card>
+  }
+</section>

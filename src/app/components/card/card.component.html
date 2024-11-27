@@ -16,9 +16,21 @@
       <p class="card__body__txt">
         <strong>Durée :</strong> {{ healthcareItem.duration }}
       </p>
-      <p class="card__body__txt">
-        <strong>Prix :</strong> {{ healthcareItem.prices }}
-      </p>
+      @if (selectedOffice) {
+        <p class="card__body__txt">
+          <strong>Prix :</strong>
+          {{ healthcareItem.prices[selectedOffice] || "Non disponible" }}
+        </p>
+      } @else {
+        <ul class="card__body__prices">
+          @for (cabinet of getCabinets(healthcareItem.prices); track $index) {
+            <li>
+              <strong>{{ cabinet }} :</strong>
+              {{ healthcareItem.prices[cabinet] }}
+            </li>
+          }
+        </ul>
+      }
       <p class="card__body__txt">
         <strong>Audience :</strong> {{ healthcareItem.audience }}
       </p>

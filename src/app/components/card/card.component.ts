@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class CardComponent implements OnInit {
   @Input() healthcareItem!: Healthcare;
+  @Input() selectedOffice: string = '';
   bookingUrl: string = '';
   isExpanded: boolean = false;
 
@@ -22,6 +23,10 @@ export class CardComponent implements OnInit {
 
   toggleDescription() {
     this.isExpanded = !this.isExpanded;
+  }
+
+  getCabinets(prices: { [cabinet: string]: string }): string[] {
+    return Object.keys(prices).filter((cabinet) => prices[cabinet] !== 'NO');
   }
 
   private getBookingUrl(): string {
