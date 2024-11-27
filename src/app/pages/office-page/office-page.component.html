@@ -1,0 +1,26 @@
+<section class="offices">
+  @for (office of offices; track $index) {
+    <div class="office">
+      <div>
+        <h2 class="office__title">{{ office.title }}</h2>
+        <p class="office__address" *ngIf="office.address">
+          {{ office.address }}
+        </p>
+        <hr />
+      </div>
+
+      @for (block of office.blocks; track $index) {
+        <div class="office__block">
+          <div class="office__image">
+            <img [src]="block.image" [alt]="block.alt" />
+          </div>
+          <div class="office__content">
+            @for (description of block.descriptions; track $index) {
+              <p class="office__txt">{{ description }}</p>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  }
+</section>

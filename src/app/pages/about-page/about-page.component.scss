@@ -69,6 +69,13 @@
   .about {
     max-width: none;
     width: 90%;
+    &__social {
+      gap: 2rem;
+      a {
+        font-size: 1.25rem;
+        padding: 0.5rem 0.8rem;
+      }
+    }
   }
 }
 
@@ -85,7 +92,11 @@
       font-size: 0.9rem;
     }
     &__social {
-      gap: 1rem;
+      a {
+        width: fit-content;
+        text-align: center;
+        font-size: 1.2rem;
+      }
     }
     &__list {
       padding-left: 1rem;
@@ -109,7 +120,8 @@
       font-size: 0.8rem;
     }
     &__social {
-      gap: 0.5rem;
+      gap: 0;
+      flex-direction: column;
       a {
         margin: 0.5rem auto;
         font-size: 1rem;

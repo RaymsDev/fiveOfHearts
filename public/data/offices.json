@@ -1,0 +1,101 @@
+[
+  {
+    "id": "saint-leger-triey",
+    "title": "Cabinet de Saint Léger Triey",
+    "address": "7 rue haute, 21556 Saint-Léger-Triey",
+    "blocks": [
+      {
+        "image": "assets/stleger1.webp",
+        "alt": "Cabinet de Saint Léger Triey, vue intérieure 1",
+        "descriptions": [
+          "Un espace moderne et apaisant, conçu pour offrir un cocon de sérénité. Chaque détail a été pensé pour que vous vous sentiez immédiatement à l’aise.",
+          "Le cabinet est situé dans le charmant village de Saint Léger Triey, offrant une ambiance calme et naturelle, parfaite pour vos moments de détente."
+        ]
+      },
+      {
+        "image": "assets/stleger2.webp",
+        "alt": "Cabinet de Saint Léger Triey, vue intérieure 2",
+        "descriptions": [
+          "Avec une décoration épurée et un mobilier confortable, cet espace est idéal pour des séances de soins personnalisées.",
+          "Laissez-vous transporter dans un environnement chaleureux, où chaque soin est une invitation à la relaxation et au ressourcement."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "quetigny",
+    "title": "Centre TherrAzur Quetigny",
+    "address": "14 Rue du Golf, 21800 Quetigny",
+    "blocks": [
+      {
+        "image": "assets/therazur1.webp",
+        "alt": "Centre TherrAzur Quetigny, entrée",
+        "descriptions": [
+          "Le Centre TherrAzur est un véritable havre de paix dédié au bien-être, situé dans un cadre moderne et accessible.",
+          "Avec ses horaires flexibles (7 jours sur 7, de 8h à 22h), ce lieu est parfaitement adapté à votre emploi du temps, que ce soit pour une pause bien-être ou un soin complet."
+        ]
+      },
+      {
+        "image": "assets/therazur2.webp",
+        "alt": "Centre TherrAzur Quetigny, salle de soins",
+        "descriptions": [
+          "Les salles lumineuses et soigneusement aménagées garantissent une expérience de soin inoubliable. Chaque espace est conçu pour vous offrir confort et sérénité.",
+          "Idéal pour des soins énergétiques, des massages ou des séances de relaxation, le Centre TherrAzur vous accueille dans un environnement à la fois professionnel et convivial."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "chez-socha",
+    "title": "Cabinet de Saint Apollinaire, Chez Socha",
+    "address": "236 Rue des Clairs Logis, 21850 Saint-Apollinaire",
+    "blocks": [
+      {
+        "image": "assets/duostapo1.webp",
+        "alt": "Cabinet Chez Socha, salle de soins duo",
+        "descriptions": [
+          "Un espace unique dédié aux soins en duo, parfait pour partager un moment de complicité et de bien-être avec un proche.",
+          "Profitez de l’ambiance douce et harmonieuse de cette salle équipée pour répondre à vos attentes, que ce soit pour des massages relaxants ou des soins énergétiques."
+        ]
+      },
+      {
+        "image": "assets/duostapo2.webp",
+        "alt": "Cabinet Chez Socha, intérieur 1",
+        "descriptions": [
+          "Un lieu où chaque détail a été soigneusement pensé pour favoriser le bien-être. La décoration chaleureuse et l’équipement moderne en font un espace de relaxation par excellence.",
+          "Que ce soit pour une séance individuelle ou en duo, ce cabinet offre une ambiance apaisante qui invite à la détente totale."
+        ]
+      },
+      {
+        "image": "assets/duostapo3.webp",
+        "alt": "Cabinet Chez Socha, intérieur 2",
+        "descriptions": [
+          "Un cadre accueillant et intime, idéal pour se ressourcer et se reconnecter à soi-même.",
+          "L’attention portée à l’harmonie des couleurs et des textures transforme chaque séance en une expérience unique et mémorable."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "entreprise",
+    "title": "Dans vos locaux",
+    "blocks": [
+      {
+        "image": "assets/entreprise1.webp",
+        "alt": "Soin réalisé dans vos locaux, exemple 1",
+        "descriptions": [
+          "Nos services en entreprise sont spécialement conçus pour apporter relaxation et sérénité directement sur votre lieu de travail.",
+          "Que ce soit pour des massages assis, des soins énergétiques ou des séances de relaxation, nous créons un espace de bien-être où vous en avez besoin."
+        ]
+      },
+      {
+        "image": "assets/entreprise2.webp",
+        "alt": "Soin réalisé dans vos locaux, exemple 2",
+        "descriptions": [
+          "Profitez d’une pause bien-être sur mesure, sans avoir à vous déplacer. Nos prestations sont adaptées aux besoins des collaborateurs et des équipes.",
+          "Nous transformons vos locaux en un espace de détente, favorisant la productivité et la cohésion d’équipe."
+        ]
+      }
+    ]
+  }
+]

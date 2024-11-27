@@ -17,6 +17,13 @@ export const routes: Routes = [
       ).then((m) => m.MassageDetailsPageComponent),
   },
   {
+    path: 'office',
+    loadComponent: () =>
+      import('./pages/office-page/office-page.component').then(
+        (m) => m.OfficePageComponent,
+      ),
+  },
+  {
     path: 'legal-mentions',
     loadComponent: () =>
       import('./pages/legal-mentions-page/legal-mentions-page.component').then(

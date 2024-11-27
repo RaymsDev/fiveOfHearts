@@ -4,48 +4,21 @@ h2 {
   margin: 100px auto 30px;
   text-align: center;
 }
-.introduction {
-  font-size: 1.2rem;
+h3 {
+  font-size: 1.5rem;
   color: var(--color-secondary);
-  margin: 0 auto 50px;
+  margin: 0 auto 10px;
   text-align: center;
-  max-width: 1000px;
-  &__txt {
-    margin: 0 auto 20px;
-  }
-}
-.healthcare-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 50px;
-  justify-content: center;
-  padding: 1.5rem 3rem;
 }
 
 /* Responsive Rules */
-@media screen and (max-width: 1024px) {
-  .introduction {
-    font-size: 1rem;
-    margin: 0 auto 30px;
-    padding: 0 1.5rem;
-    &__txt {
-      margin: 0 auto 10px;
-    }
-  }
-  .healthcare-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 1.5rem 3rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
   h2 {
     font-size: 2rem;
     margin: 100px auto 20px;
   }
-  .healthcare-container {
-    grid-template-columns: 1fr;
-    padding: 1.5rem 2rem;
+  h3 {
+    font-size: 1.25rem;
   }
 }
 
@@ -54,10 +27,5 @@ h2 {
     font-size: 1.5rem;
     margin: 100px auto 10px;
     padding: 1rem 1.5rem;
-  }
-  .introduction {
-    font-size: 0.9rem;
-    margin: 0 auto 20px;
-    padding: 0 1rem;
   }
 }
