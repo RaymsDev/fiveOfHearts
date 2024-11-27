@@ -15,3 +15,4 @@
 - [ ] Refacto pages
 - [ ] Move title on main banner
 - [ ] Potential cabinets added?
+- [ ] Update prices on Google Map
