@@ -20,7 +20,7 @@ export const SITE_CONFIG: Record<string, string> = {
   KNAP_MASSAGE:
     'https://perfactive.fr/5-de-cour/date?location=3234180&people=13548&reason=87947',
   ADDRESS: '7 rue haute, Saint-Léger-Triey, France',
-  PHONE: 'MDYgODcgODQgNjIgMzA=',
+  PHONE: 'KzMzIDYgODcgODQgNjIgMzA=',
   EMAIL: 'amwubGFmZnVnZUBnbWFpbC5jb20=',
 
   // RECAPTCHA_SITE_KEY: '6Ldsxn8qAAAAAF-n49wazTU2Yof4amcd1VFNmXOq',
