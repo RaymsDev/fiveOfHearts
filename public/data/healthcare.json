@@ -8,8 +8,7 @@
     "audience": "Adultes - Enfants",
     "prices": {
       "Saint Léger Triey": "45 €",
-      "Quetigny": "55 €",
-      "Chez Socha": "NO"
+      "Quetigny": "55 €"
     }
   },
   {
@@ -21,8 +20,7 @@
     "audience": "Adultes - Enfants",
     "prices": {
       "Saint Léger Triey": "65 €",
-      "Quetigny": "70 €",
-      "Chez Socha": "NO"
+      "Quetigny": "70 €"
     }
   },
   {
@@ -34,8 +32,7 @@
     "audience": "Femmes enceintes",
     "prices": {
       "Saint Léger Triey": "60 €",
-      "Quetigny": "70 €",
-      "Chez Socha": "NO"
+      "Quetigny": "70 €"
     }
   },
   {
@@ -47,8 +44,7 @@
     "audience": "Adultes - Enfants",
     "prices": {
       "Saint Léger Triey": "35 €",
-      "Quetigny": "35 €",
-      "Chez Socha": "NO"
+      "Quetigny": "35 €"
     }
   },
   {
@@ -60,8 +56,7 @@
     "audience": "Adultes",
     "prices": {
       "Saint Léger Triey": "45 €",
-      "Quetigny": "55 €",
-      "Chez Socha": "NO"
+      "Quetigny": "55 €"
     }
   },
   {
@@ -72,9 +67,8 @@
     "duration": "40 min",
     "audience": "Adultes - Enfants",
     "prices": {
-      "Saint Léger Triey": "45 €",
-      "Quetigny": "55 €",
-      "Chez Socha": "NO"
+      "Saint Léger Triey": "40 €",
+      "Quetigny": "45 €"
     }
   },
   {
@@ -86,8 +80,7 @@
     "audience": "Adultes - Enfants",
     "prices": {
       "Saint Léger Triey": "45 €",
-      "Quetigny": "55 €",
-      "Chez Socha": "NO"
+      "Quetigny": "55 €"
     }
   },
   {
@@ -98,9 +91,7 @@
     "duration": "60 min",
     "audience": "Adultes",
     "prices": {
-      "Saint Léger Triey": "60 €",
-      "Quetigny": "NO",
-      "Chez Socha": "NO"
+      "Saint Léger Triey": "60 €"
     }
   },
   {
@@ -111,8 +102,6 @@
     "duration": "60 min",
     "audience": "Adultes - Enfants",
     "prices": {
-      "Saint Léger Triey": "NO",
-      "Quetigny": "NO",
       "Chez Socha": "130 €"
     }
   },
@@ -124,9 +113,6 @@
     "duration": "15 min",
     "audience": "Adultes",
     "prices": {
-      "Saint Léger Triey": "NO",
-      "Quetigny": "NO",
-      "Chez Socha": "NO",
       "Entreprise": "Sur devis"
     }
   }
