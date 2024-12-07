@@ -100,7 +100,7 @@
     "description": "Redécouvrez une tradition ancestrale avec les bougies d'oreille Hopi. Ce soin naturel aide à éliminer les impuretés auriculaires tout en offrant une profonde relaxation. Grâce à leur action douce et calorique, ces bougies favorisent une meilleure hygiène auriculaire et procurent une sensation de calme et de bien-être. Idéal pour apaiser les tensions du quotidien.",
     "img": "assets/ears.webp",
     "duration": {
-      "value": 40,
+      "value": 30,
       "unitText": "min"
     },
     "audience": "Adultes - Enfants",
