@@ -13,9 +13,7 @@
       {{ isExpanded ? "Réduire" : "Afficher la suite" }}
     </button>
     <div class="card_body__ctn">
-      <p class="card__body__txt">
-        <strong>Durée :</strong> {{ healthcareItem.duration }}
-      </p>
+      <p class="card__body__txt"><strong>Durée :</strong> {{ duration }}</p>
       @if (selectedOffice) {
         <p class="card__body__txt">
           <strong>Prix :</strong>

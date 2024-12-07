@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-filter',
@@ -9,8 +9,11 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class FilterComponent {
   @Input() offices: { id: string; label: string }[] = [];
   @Output() filter = new EventEmitter<string>();
+  selectedOfficeId: string = '';
+  emptyOfficeId: string = '';
 
   onFilter(officeId: string): void {
+    this.selectedOfficeId = officeId;
     this.filter.emit(officeId);
   }
 }

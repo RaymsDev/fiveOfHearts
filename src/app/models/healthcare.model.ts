@@ -3,7 +3,14 @@ export interface Healthcare {
   title: string;
   description: string;
   img: string;
-  duration: string;
+  duration: {
+    value: number;
+    unitText: string;
+  };
+  price: {
+    value: number | string;
+    currency: string;
+  };
   audience: string;
   prices: {
     [cabinet: string]: string;

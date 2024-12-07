@@ -1,8 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import { SITE_CONFIG } from '../../configs';
 import { Healthcare } from '../../models/healthcare.model';
 import { ButtonComponent } from '../button/button.component';
-import { SITE_CONFIG } from '../../configs';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-card',
@@ -29,6 +29,13 @@ export class CardComponent implements OnInit {
     return Object.keys(prices).filter((cabinet) => prices[cabinet] !== 'NO');
   }
 
+  get duration(): string {
+    return `${this.healthcareItem.duration.value} ${this.healthcareItem.duration.unitText}`;
+  }
+
+  /**
+   * TODO: This method should be refactored to put the booking URL in the healthcare model and in the json data
+   */
   private getBookingUrl(): string {
     switch (this.healthcareItem.title) {
       case 'Soins énergétiques':

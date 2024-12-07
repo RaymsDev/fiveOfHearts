@@ -14,7 +14,7 @@
     cursor: pointer;
 
     &:hover,
-    &:focus {
+    &.selected {
       background-color: var(--color-secondary);
     }
   }

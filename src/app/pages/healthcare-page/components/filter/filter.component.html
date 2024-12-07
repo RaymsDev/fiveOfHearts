@@ -1,8 +1,16 @@
 <div class="filter">
   @for (office of offices; track $index) {
-    <button (click)="onFilter(office.id)">
+    <button
+      [class.selected]="selectedOfficeId === office.id"
+      (click)="onFilter(office.id)"
+    >
       {{ office.id }}
     </button>
   }
-  <button (click)="onFilter('')">Tous les cabinets</button>
+  <button
+    [class.selected]="selectedOfficeId === emptyOfficeId"
+    (click)="onFilter(emptyOfficeId)"
+  >
+    Tous les cabinets
+  </button>
 </div>

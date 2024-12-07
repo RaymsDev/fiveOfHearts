@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { Healthcare } from '../../../../models/healthcare.model';
 import { CardComponent } from '../../../../components/card/card.component';
+import { Healthcare } from '../../../../models/healthcare.model';
 
 @Component({
   selector: 'app-list',
