@@ -16,6 +16,22 @@
     "prices": {
       "Saint Léger Triey": "45 €",
       "Quetigny": "55 €"
+    },
+    "products": {
+      "Saint Léger Triey": {
+        "price": {
+          "value": 45,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3234180&people=13548&reason=132410"
+      },
+      "Quetigny": {
+        "price": {
+          "value": 55,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3621260&people=13548&reason=87940"
+      }
     }
   },
   {
@@ -32,9 +48,21 @@
       "value": 65,
       "currency": "EUR"
     },
-    "prices": {
-      "Saint Léger Triey": "65 €",
-      "Quetigny": "70 €"
+    "products": {
+      "Saint Léger Triey": {
+        "price": {
+          "value": 65,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3234180&people=13548&reason=132411"
+      },
+      "Quetigny": {
+        "price": {
+          "value": 70,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3621260&people=13548&reason=87941"
+      }
     }
   },
   {
@@ -51,9 +79,21 @@
       "value": 60,
       "currency": "EUR"
     },
-    "prices": {
-      "Saint Léger Triey": "60 €",
-      "Quetigny": "70 €"
+    "products": {
+      "Saint Léger Triey": {
+        "price": {
+          "value": 60,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3234180&people=13548&reason=132416"
+      },
+      "Quetigny": {
+        "price": {
+          "value": 70,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3621260&people=13548&reason=130897"
+      }
     }
   },
   {
@@ -70,9 +110,21 @@
       "value": 35,
       "currency": "EUR"
     },
-    "prices": {
-      "Saint Léger Triey": "35 €",
-      "Quetigny": "35 €"
+    "products": {
+      "Saint Léger Triey": {
+        "price": {
+          "value": 35,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3234180&people=13548&reason=132414"
+      },
+      "Quetigny": {
+        "price": {
+          "value": 35,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3621260&people=13548&reason=87946"
+      }
     }
   },
   {
@@ -89,9 +141,21 @@
       "value": 45,
       "currency": "EUR"
     },
-    "prices": {
-      "Saint Léger Triey": "45 €",
-      "Quetigny": "55 €"
+    "products": {
+      "Saint Léger Triey": {
+        "price": {
+          "value": 45,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3234180&people=13548&reason=132415"
+      },
+      "Quetigny": {
+        "price": {
+          "value": 55,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3621260&people=13548&reason=87947"
+      }
     }
   },
   {
@@ -108,9 +172,21 @@
       "value": 40,
       "currency": "EUR"
     },
-    "prices": {
-      "Saint Léger Triey": "40 €",
-      "Quetigny": "45 €"
+    "products": {
+      "Saint Léger Triey": {
+        "price": {
+          "value": 40,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3234180&people=13548&reason=132413"
+      },
+      "Quetigny": {
+        "price": {
+          "value": 45,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3621260&people=13548&reason=87944"
+      }
     }
   },
   {
@@ -127,9 +203,21 @@
       "value": 45,
       "currency": "EUR"
     },
-    "prices": {
-      "Saint Léger Triey": "45 €",
-      "Quetigny": "55 €"
+    "products": {
+      "Saint Léger Triey": {
+        "price": {
+          "value": 45,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3234180&people=13548&reason=132412"
+      },
+      "Quetigny": {
+        "price": {
+          "value": 55,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3621260&people=13548&reason=87942"
+      }
     }
   },
   {
@@ -146,8 +234,14 @@
       "value": 60,
       "currency": "EUR"
     },
-    "prices": {
-      "Saint Léger Triey": "60 €"
+    "products": {
+      "Saint Léger Triey": {
+        "price": {
+          "value": 60,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/5-de-cour/date?location=3234180&people=13548&reason=130903"
+      }
     }
   },
   {
@@ -164,8 +258,14 @@
       "value": 130,
       "currency": "EUR"
     },
-    "prices": {
-      "Chez Socha": "130 €"
+    "products": {
+      "Chez Socha": {
+        "price": {
+          "value": 130,
+          "currency": "EUR"
+        },
+        "bookingUrl": "https://perfactive.fr/magnetiseur/saint-leger-triey/jean-luc-laffuge"
+      }
     }
   },
   {
@@ -182,8 +282,11 @@
       "value": "Sur devis",
       "currency": "EUR"
     },
-    "prices": {
-      "Entreprise": "Sur devis"
+    "products": {
+      "Entreprise": {
+        "price": "Sur devis",
+        "bookingUrl": "https://perfactive.fr/magnetiseur/saint-leger-triey/jean-luc-laffuge"
+      }
     }
   }
 ]

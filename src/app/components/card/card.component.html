@@ -17,14 +17,14 @@
       @if (selectedOffice) {
         <p class="card__body__txt">
           <strong>Prix :</strong>
-          {{ healthcareItem.prices[selectedOffice] || "Non disponible" }}
+          {{ getPrice(selectedOffice) }}
         </p>
       } @else {
         <ul class="card__body__prices">
-          @for (cabinet of getCabinets(healthcareItem.prices); track $index) {
+          @for (office of getOffices(healthcareItem.products); track $index) {
             <li>
-              <strong>{{ cabinet }} :</strong>
-              {{ healthcareItem.prices[cabinet] }}
+              <strong>{{ office }} :</strong>
+              {{ getPrice(office) }}
             </li>
           }
         </ul>
@@ -34,5 +34,12 @@
       </p>
     </div>
   </div>
-  <app-button [url]="bookingUrl" label="Réserver"></app-button>
+  @if (selectedOffice) {
+    <app-button
+      [url]="getBookingUrl(selectedOffice)"
+      label="Réserver"
+    ></app-button>
+  } @else {
+    <app-button [url]="getBookingUrl()" label="Réserver"></app-button>
+  }
 </div>
