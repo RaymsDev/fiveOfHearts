@@ -51,27 +51,37 @@ export function createService(
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Liste des services',
-      itemListElement: healthcares.map((item) => ({
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: item.title,
-          description: item.description,
-          image: `${originUrl}/${item.img}`,
-          audience: {
-            '@type': 'Audience',
-            audienceType: item.audience,
-          },
-        },
-        price: item.price.value,
-        priceCurrency: item.price.currency,
-        eligibleDuration: {
-          '@type': 'QuantitativeValue',
-          value: item.duration.value,
-          unitText: item.duration.unitText,
-        },
-        areaServed: principalPlace,
-      })),
+      itemListElement: healthcares
+        .map((item) => {
+          const product = item.products['Saint Léger Triey'];
+
+          if (product === undefined || product.price === 'Sur devis') {
+            return undefined;
+          }
+
+          return {
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: item.title,
+              description: item.description,
+              image: `${originUrl}/${item.img}`,
+              audience: {
+                '@type': 'Audience',
+                audienceType: item.audience,
+              },
+            },
+            price: product.price.value,
+            priceCurrency: product.price.currency,
+            eligibleDuration: {
+              '@type': 'QuantitativeValue',
+              value: item.duration.value,
+              unitText: item.duration.unitText,
+            },
+            areaServed: principalPlace,
+          } as any;
+        })
+        .filter((item) => item !== undefined),
     },
   };
 }

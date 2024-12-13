@@ -93,13 +93,9 @@ export class HealthcarePageComponent implements OnInit {
 
   getFilteredHealthcareData(office: string): Healthcare[] {
     if (office) {
-      return this.healthcareData.filter(
-        (item) => item.prices[office] && item.prices[office] !== 'NO',
-      );
+      return this.healthcareData.filter((item) => item.products[office]);
     }
-    return this.healthcareData.filter((item) =>
-      Object.values(item.prices).some((price) => price !== 'NO'),
-    );
+    return this.healthcareData;
   }
 
   get selectedOfficeLabel(): string {

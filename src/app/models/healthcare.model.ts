@@ -1,3 +1,13 @@
+export interface Product {
+  price:
+    | {
+        value: number | string;
+        currency: string;
+      }
+    | 'Sur devis';
+  bookingUrl: string;
+}
+
 export interface Healthcare {
   id: number;
   title: string;
@@ -7,12 +17,8 @@ export interface Healthcare {
     value: number;
     unitText: string;
   };
-  price: {
-    value: number | string;
-    currency: string;
-  };
   audience: string;
-  prices: {
-    [cabinet: string]: string;
+  products: {
+    [office: string]: Product;
   };
 }
